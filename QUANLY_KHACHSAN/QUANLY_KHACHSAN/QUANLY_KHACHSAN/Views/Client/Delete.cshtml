@@ -1,0 +1,79 @@
+﻿@model QUANLY_KHACHSAN.Models.Khachhang
+
+@{
+    ViewData["Title"] = "Delete";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Khachhang</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tenkh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tenkh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tuoi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tuoi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Diachikh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Diachikh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cccdkh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cccdkh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MaloaikhachNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MaloaikhachNavigation.Maloaikhach)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MapNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MapNavigation.Map)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Makh" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

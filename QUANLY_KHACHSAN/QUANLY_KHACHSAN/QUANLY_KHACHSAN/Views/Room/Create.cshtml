@@ -1,0 +1,104 @@
+﻿@model Phong
+@{
+    ViewData["Title"] = "Create room";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+<div class="text-center">
+    <h2 class="display-4" style="color:red;">TẠO PHÒNG MỚI</h2>
+</div>
+
+<div class="container mt-5">
+    <form asp-action="Create" method="post">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Tenphong" class="font-weight-bold">Tên phòng</label>
+                    <input type="text" asp-for="Tenphong" class="form-control" />
+                    <span asp-validation-for="Tenphong" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Maloaiphong" class="font-weight-bold">Loại phòng</label>
+                    <select class="form-control" asp-for="Maloaiphong" id="roomType" asp-items="ViewBag.RoomType"></select>
+                    <span asp-validation-for="Maloaiphong" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">Đơn giá</label>
+                    <div class="input-group">
+                        <input type="number" id="Price" class="form-control" readonly />
+                        <div class="input-group-append">
+                            <span class="input-group-text">VND</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="font-weight-bold" asp-for="Soluongkhachtoida">Số khách ở tối đa</label>
+                    <input asp-for="Soluongkhachtoida" type="number" id="numberCustomer" class="form-control">
+                    <span asp-validation-for="Soluongkhachtoida" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Ghichu" class="font-weight-bold">Ghi chú</label>
+                    <input type="text" asp-for="Ghichu" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 d-flex justify-content-start">
+                <a asp-action="RoomList" class="btn btn-warning btn-block mr-auto" asp-route-manager="@(TempData["Manager"].ToString())">Xem danh sách phòng</a>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary btn-block ml-auto" asp-route-manager="@(TempData["Manager"].ToString())">Tạo phòng</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById("numberCustomer").value = 2;
+
+    var roomTypeDropdown = document.getElementById("roomType");
+    var priceField = document.getElementById("Price");
+    var roomTypes = @Html.Raw(Json.Serialize(ViewBag.RoomType));
+    var roomDongia = @Html.Raw(Json.Serialize(ViewBag.RoomType2));
+
+    // Initialize price with the smallest room's price
+    var smallestRoomId = Math.min(...roomDongia.map(room => parseInt(room.value)));
+    var smallestRoom = roomDongia.find(room => parseInt(room.value) === smallestRoomId);
+    priceField.value = smallestRoom.text;
+
+    roomTypeDropdown.addEventListener("change", function () {
+        var selectedType = this.value;
+        var selectedRoomType = roomTypes.find(function (roomType) {
+            return roomType.value === selectedType;
+        });
+
+        if (selectedRoomType) {
+            var maloaiphong = selectedRoomType.value;
+            var dongia = roomDongia.find(function (room) {
+                return room.value === maloaiphong;
+            });
+
+            if (dongia) {
+                priceField.value = dongia.text;
+            }
+        }
+    });
+</script>
+
+

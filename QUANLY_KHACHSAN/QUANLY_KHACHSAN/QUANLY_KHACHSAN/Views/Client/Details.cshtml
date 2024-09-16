@@ -1,0 +1,76 @@
+﻿@model QUANLY_KHACHSAN.Models.Khachhang
+
+@{
+    ViewData["Title"] = "Details";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Khachhang</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tenkh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tenkh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tuoi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tuoi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Diachikh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Diachikh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cccdkh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cccdkh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MaloaikhachNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MaloaikhachNavigation.Tenloaikhach)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MapNavigation.Map)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MapNavigation.Tenphong)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Makh">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

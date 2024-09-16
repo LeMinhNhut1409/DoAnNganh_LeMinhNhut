@@ -1,0 +1,53 @@
+﻿@model Loaiphong
+@{
+    ViewData["Title"] = "Update room";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+<div class="text-center">
+    <h2 class="display-4" style="color:red;">CẬP NHẬT PHÒNG</h2>
+</div>
+
+<div class="container mt-5">
+    <form asp-action="UpdateRoomType" method="post">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Tenloai" class="font-weight-bold">Tên loại phòng</label>
+                    <input type="text" asp-for="Tenloai" class="form-control" />
+                    <span asp-validation-for="Tenloai" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Dongia" class="font-weight-bold">Đơn giá</label>
+                    <input type="text" asp-for="Dongia" class="form-control" />
+                    <span asp-validation-for="Dongia" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 d-flex justify-content-start">
+                <a asp-action="RoomType" class="btn btn-warning btn-block mr-auto">Xem danh sách loại phòng</a>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary btn-block ml-auto" asp-route-roomtypeid="@Model.Maloaiphong">Cập nhật</button>
+            </div>
+        </div>
+    </form>
+</div>
+

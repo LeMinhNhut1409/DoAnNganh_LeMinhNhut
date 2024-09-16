@@ -1,0 +1,95 @@
+﻿@model Khachhang
+@{
+    ViewData["Title"] = "UPDATE CLIENT INFO";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+
+<div class="text-center">
+    <h2 class="display-4">CẬP NHẬT THÔNG TIN KHÁCH HÀNG</h2>
+</div>
+
+<div class="container mt-5">
+    <form asp-action="Update" method="post">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Tenkh" class="font-weight-bold">Tên khách hàng</label>
+                    <input type="text" asp-for="Tenkh" class="form-control" />
+                    <span asp-validation-for="Tenkh" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Tuoi" class="font-weight-bold">Tuổi</label>
+                    <input type="number" asp-for="Tuoi" class="form-control" placeholder="25" />
+                    <span asp-validation-for="Tuoi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Maloaikhach" class="font-weight-bold">Loại khách</label>
+                    <select class="form-control" asp-for="Maloaikhach" id="clientType" asp-items="ViewBag.ClientType"></select>
+                    <span asp-validation-for="Maloaikhach" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Cccdkh" class="font-weight-bold">CMND</label>
+                    <input type="text" asp-for="Cccdkh" class="form-control" placeholder="111111111111" />
+                    <span asp-validation-for="Cccdkh" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Tel" class="font-weight-bold"> Số điện thoại</label>
+                    <input type="text" asp-for="Tel" class="form-control" placeholder="+84123456789" />
+                    <span asp-validation-for="Tel" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Diachikh" class="font-weight-bold">Địa chỉ</label>
+                    <input type="text" asp-for="Diachikh" class="form-control" />
+                    <span asp-validation-for="Diachikh" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Map" class="font-weight-bold">Tên Phòng</label>
+                    <select class="form-control" asp-for="Map" id="clientType" asp-items="ViewBag.ClientRoom"></select>
+                    <span asp-validation-for="Map" class="text-danger"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 d-flex justify-content-start">
+                <a asp-controller="Client" asp-action="ClientList" class="btn btn-warning btn-block mr-auto">Xem danh sách khách hàng</a>
+
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary btn-block ml-auto" asp-route-clientid="@Model.Makh" asp-route-value1="@(TempData["TempMapt"].ToString())">Lưu</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    // Get the Tenphong value from Khachhang entity (assuming it's available in a variable called tenPhong)
+    var tenPhong = '@Model.MapNavigation.Tenphong';
+
+    // Find the select element by its ID
+    var selectElement = document.getElementById('clientType');
+
+    // Loop through each option to find and select the one that matches the Tenphong value
+    for (var i = 0; i < selectElement.options.length; i++) {
+        if (selectElement.options[i].text === tenPhong) {
+            selectElement.options[i].selected = true; // Set the option as selected
+            break; // Exit the loop once the match is found
+        }
+    }
+</script>

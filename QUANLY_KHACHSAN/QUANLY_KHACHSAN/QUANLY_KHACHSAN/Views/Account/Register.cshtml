@@ -1,0 +1,90 @@
+﻿@model QUANLY_KHACHSAN.Models.Taikhoan
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_ManagerLayout";
+}
+@if (ViewBag.success != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.success
+    </div>
+}
+
+<h1 class="text-center" style="color:red;">CẤP TÀI KHOẢN</h1>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="Register">
+            <p>@ViewBag.success</p>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Manv" class="font-weight-bold">Mã nhân viên</label>
+                <select class="form-control" asp-for="Manv" id="employeeId" asp-items="ViewBag.EmployeeIdList">
+                    <option value="0">Tất cả</option>
+                </select>
+                <span asp-validation-for="Manv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tentknv" class="font-weight-bold">Tên tài khoản</label>
+                <div class="input-group">
+                    <input asp-for="Tentknv" type="text" id="Email" class="form-control" readonly />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Mktk" class="control-label">Mật khẩu tài khoản</label>
+                <input asp-for="Mktk" class="form-control" type="text" value="123456789" readonly />
+                <span asp-validation-for="Mktk" class="text-danger"></span>
+            </div>
+
+            <!-- Other input fields here -->
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Tạo" class="btn btn-primary float-md-end" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@*
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+*@
+<script>
+    var EmployeeIdDropDown = document.getElementById("employeeId");
+    var emailField = document.getElementById("Email");
+    var passwordField = document.getElementById("Mktk");
+    var empIds = @Html.Raw(Json.Serialize(ViewBag.EmployeeIdList));
+    var emailFromBag = @Html.Raw(Json.Serialize(ViewBag.EmployeeEmailList));
+
+    emailField.value = "all@gmail.com"; // Set default email
+
+    EmployeeIdDropDown.addEventListener("change", function () {
+        var selectedType = this.value;
+
+        if (selectedType === "All") {
+            emailField.value = "all@gmail.com"; // Set email to "all@gmail.com" for the default option
+        } else {
+            var selectEmpId = empIds.find(function (empId) {
+                return empId.value === selectedType;
+            });
+
+            if (selectEmpId) {
+                var maNV = selectEmpId.value;
+                var emailGet = emailFromBag.find(function (emp) {
+                    return emp.value === maNV;
+                });
+
+                if (emailGet) {
+                    emailField.value = emailGet.text; // Set email to selected employee's email
+                }
+            }
+        }
+
+        passwordField.value = "123456789"; // Set default password
+    });
+</script>
+

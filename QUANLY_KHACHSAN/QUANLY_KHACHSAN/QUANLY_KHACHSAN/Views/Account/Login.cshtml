@@ -1,0 +1,72 @@
+﻿@model QUANLY_KHACHSAN.Models.Taikhoan
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        background-color: #f8f9fa; /* Màu nền nhẹ nhàng */
+    }
+
+    .login-container {
+        background-color: #ffffff; /* Màu nền trắng cho form */
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng cho khung */
+    }
+
+    .login-title {
+        color: #007bff; /* Màu xanh cho tiêu đề */
+    }
+
+    .error-message {
+        color: red; /* Màu đỏ cho thông báo lỗi */
+    }
+
+    .btn-primary {
+        background-color: #007bff; /* Màu nền nút chính */
+        border: none; /* Bỏ viền */
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Màu nút khi hover */
+        }
+</style>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center login-title">Đăng nhập</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 login-container">
+                <p class="error-message">@ViewBag.error</p>
+                <form asp-action="Login" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="Tentknv" class="control-label">Tài khoản</label>
+                        <input asp-for="Tentknv" class="form-control" />
+                        <span asp-validation-for="Tentknv" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Mktk" class="control-label">Mật khẩu</label>
+                        <div class="input-group">
+                            <input asp-for="Mktk" class="form-control" type="password" id="passwordInput" />
+                        </div>
+                        <span asp-validation-for="Mktk" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <input type="submit" value="Đăng nhập" class="btn btn-primary float-md-end" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>

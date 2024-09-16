@@ -1,0 +1,16 @@
+﻿
+@model QUANLY_KHACHSAN.Models.Taikhoan
+
+@{
+    ViewData["Title"] = "Result";
+}
+@if (ViewBag.accname != null)
+{
+    <p>@ViewBag.accname</p>
+}
+
+
+@if (!string.IsNullOrEmpty(ViewBag.accname))
+{
+    <a href="/Account/Logout">Log out</a>
+}

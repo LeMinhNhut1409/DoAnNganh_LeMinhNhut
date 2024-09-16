@@ -1,0 +1,84 @@
+﻿@model Nhanvien
+@{
+    ViewData["Title"] = "Update Nhanvien";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+<div class="text-center">
+    <h2 class="display-4" style="color: red;">CẬP NHẬT THÔNG TIN NHÂN VIÊN</h2>
+</div>
+
+<div class="container mt-5">
+    <form asp-action="Create" method="post">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Hoten" class="font-weight-bold">Họ tên</label>
+                    <input type="text" asp-for="Hoten" class="form-control" />
+                    <span asp-validation-for="Hoten" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Gioitinh" class="font-weight-bold">Giới tính</label>
+                    <select asp-for="Gioitinh" class="form-control">
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                    </select>
+                    <span asp-validation-for="Gioitinh" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Ngaysinh" class="font-weight-bold">Ngày sinh</label>
+                    <input type="datetime" asp-for="Ngaysinh" class="form-control" placeholder="DD/MM/YYYY" />
+                    <span asp-validation-for="Ngaysinh" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Sdt" class="font-weight-bold">Số điện thoại</label>
+                    <input type="number" asp-for="Sdt" class="form-control" placeholder="+84123456789" />
+                    <span asp-validation-for="Sdt" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Email" class="font-weight-bold">Email</label>
+                    <input type="text" asp-for="Email" class="form-control" placeholder="abc@email.com" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Diachi" class="font-weight-bold">Địa chỉ</label>
+                    <input type="text" asp-for="Diachi" class="form-control" />
+                    <span asp-validation-for="Diachi" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 d-flex justify-content-start">
+                <a asp-action="NhanvienList" class="btn btn-warning btn-block mr-auto">Xem danh sách nhân viên</a>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary btn-block ml-auto" asp-route-nhanvienid="@Model.Manv">Cập nhật nhân viên</button>
+            </div>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,186 @@
+﻿@model QUANLY_KHACHSAN.ViewModels.PaginatedList<Nhanvien>
+@{
+    ViewData["Title"] = "Nhanvien List";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="path/to/font-awesome/css/all.min.css" />
+<style>
+    .table-bordered {
+        border: 2px solid black; /* Viền bảng màu đen */
+    }
+
+        .table-bordered th, .table-bordered td {
+            border: 1px solid black; /* Viền ô màu đen */
+        }
+</style>
+<div class="text-center">
+    <h2 class="display-4" style="color: red;">QUẢN LÝ NHÂN VIÊN</h2>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center ;width:100%">
+    <form id="searchForm" asp-controller="Nhanvien" asp-action="NhanvienList" method="get" class="d-flex" style="width:468px">
+        <div class="input-group">
+            <!-- Search bar -->
+            <input value="@ViewData["CurrentFilter"]" name="searchString" id="searchString" type="search" placeholder="Tìm nhân viên..." class="form-control rounded" aria-label="Search" , style="width:200px">
+            <button class="btn btn-info rounded" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </form>
+
+    <!-- Link for creating new Nhanvien -->
+    <a asp-action="Create" asp-controller="Nhanvien" class="btn btn-primary mb-3 rounded">Thêm nhân viên mới</a>
+</div>
+<div>
+</div>
+<table class="table table-striped table-bordered text-center">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                <a asp-action="NhanvienList" asp-route-sortOrder="@(ViewData["ManvSortParam"]?.ToString())" asp-route-sortColumn="Manv" asp-route-currentFilter="@ViewData["CurrentFilter"]">Mã<i class="fas fa-sort"></i></a>
+            </th>
+            <th>Họ tên</th>
+            <th>Giới tính</th>
+            <th>
+                <a asp-action="NhanvienList" asp-route-sortOrder="@(ViewData["NgaysinhSortParam"])" asp-route-sortColumn="Ngaysinh" asp-route-currentFilter="@ViewData["CurrentFilter"]">Ngày sinh<i class="fas fa-sort"></i></a>
+            </th>
+            <th>Email</th>
+            <th>Số điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Tác vụ</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var nhanvien in Model.Items)
+        {
+            var formattedDate = ((DateTime)nhanvien.Ngaysinh).ToString("dd/MM/yyyy");
+            <tr>
+                <td>@nhanvien.Manv</td>
+                <td>@nhanvien.Hoten</td>
+                <td>@nhanvien.Gioitinh</td>
+                <td>@formattedDate</td>
+                <td>@nhanvien.Email</td>
+                <td>@nhanvien.Sdt</td>
+                <td>@nhanvien.Diachi</td>
+                <td>
+                    <a asp-action="Update" asp-route-nhanvienid="@nhanvien.Manv" class="btn btn-info btn-sm rounded">Cập nhật</a>
+                    <form asp-action="Delete" method="post" asp-route-nhanvienid="@nhanvien.Manv" class="d-inline">
+                        <button type="submit" class="btn btn-danger btn-sm rounded">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item @(Model.PageIndex == 1 ? "disabled" : "")">
+                    <a class="page-link text-black" asp-route-pageNumber="1"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]">
+                        <span>Đầu</span>
+                    </a>
+                </li>
+                <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                    <a class="page-link text-black" asp-route-pageNumber="@(Model.PageIndex - 1)"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </li>
+
+                @if (Model.TotalPages <= 5)
+                {
+                    for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                            <a class="page-link text-black" asp-route-pageNumber="@i"
+                               asp-route-SortOrder="@ViewData["SortOrder"]"
+                               asp-route-sortColumn="@ViewData["sortColumn"]"
+                               asp-route-currentFilter="@ViewData["CurrentFilter"]">@i</a>
+                        </li>
+                    }
+                }
+                else
+                {
+                    @if (Model.PageIndex <= 3)
+                    {
+                        for (int i = 1; i <= 5; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link text-black" asp-route-pageNumber="@i"
+                                   asp-route-SortOrder="@ViewData["SortOrder"]"
+                                   asp-route-sortColumn="@ViewData["sortColumn"]"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]">@i</a>
+                            </li>
+                        }
+                    }
+                    else if (Model.PageIndex >= Model.TotalPages - 2)
+                    {
+                        for (int i = Model.TotalPages - 4; i <= Model.TotalPages; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link text-black" asp-route-pageNumber="@i"
+                                   asp-route-SortOrder="@ViewData["SortOrder"]"
+                                   asp-route-sortColumn="@ViewData["sortColumn"]"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]">@i</a>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        for (int i = Model.PageIndex - 2; i <= Model.PageIndex + 2; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link text-black" asp-route-pageNumber="@i"
+                                   asp-route-SortOrder="@ViewData["SortOrder"]"
+                                   asp-route-sortColumn="@ViewData["sortColumn"]"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]">@i</a>
+                            </li>
+                        }
+                    }
+                }
+
+                <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                    <a class="page-link text-black" asp-route-pageNumber="@(Model.PageIndex + 1)"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]">
+
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="page-item @(Model.PageIndex == Model.TotalPages ? "disabled" : "")">
+                    <a class="page-link text-black" asp-route-pageNumber="@Model.TotalPages"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]">
+
+                        <span>Cuối</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,253 @@
+﻿@model QUANLY_KHACHSAN.ViewModels.PaginatedList<Khachhang>
+@{
+        ViewData["Title"] = "Client List";
+        // Kiểm tra vai trò từ claims
+        var role = User.FindFirst("Role")?.Value;
+
+        // Đặt layout dựa trên vai trò
+        if (role == "Staff")
+        {
+            Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+        }
+        else if (role == "Manager")
+        {
+            Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+        }
+        else
+        {
+            Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+        }
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="path/to/font-awesome/css/all.min.css" />
+<style>
+    .table-bordered {
+        border: 2px solid black; /* Viền bảng màu đen */
+    }
+
+        .table-bordered th, .table-bordered td {
+            border: 1px solid black; /* Viền ô màu đen */
+        }
+</style>
+<div class="text-center">
+    <h2 class="display-4" style="color:red;">QUẢN LÝ THÔNG TIN KHÁCH HÀNG</h2>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center ;width:100%">
+    <form id="searchForm" asp-controller="Client" asp-action="ClientList" method="get" class="d-flex" style="width:468px">
+        <div class="input-group">
+            <!-- Search bar -->
+            <input name="searchString" id="searchString" type="search" placeholder="Tìm tên khách hàng..." class="form-control rounded" aria-label="Search" , style="width:200px">
+            <button class="btn btn-info rounded" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+            <!--Room type -->
+            <select id="clientType" name="clientType" class="form-select" asp-items="ViewBag.ClientTypeList" style="margin-left: 20px;width:30px" class="rounded"></select>
+        </div>
+    </form>
+
+    <!-- Link for creating a new room -->
+    <a asp-action="Create" class="btn btn-primary mb-3 rounded" asp-route-manager="@(TempData["Manager"].ToString())">Thêm khách hàng mới</a>
+</div>
+<div>
+</div>
+<table class="table table-striped table-bordered text-center">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                <a asp-action="ClientList" asp-route-sortOrder="@(ViewData["MaSortParam"]?.ToString())" asp-route-sortColumn="Makh" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentFilter2="@ViewData["CurrentFilter2"]">STT<i class="fas fa-sort"></i></a>
+            </th>
+            <th>
+                Tên khách hàng
+            </th>
+            <th>CMND</th>
+            <th>
+                <a asp-action="ClientList" asp-route-sortOrder="@(ViewData["TuoiSortParam"])" asp-route-sortColumn="Tuoi" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentFilter2="@ViewData["CurrentFilter2"]">Tuổi <i class="fas fa-sort"></i></a>
+            </th>
+            <th>Loại khách</th>
+            <th>SĐT</th>
+            <th>Địa chỉ </th>
+            
+            <th>Tác vụ</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var client in Model.Items)
+        {
+            <tr>
+                <td>@(Model.Items.IndexOf(client)+1)</td>
+                <td>@client.Tenkh</td>
+                <td>@client.Cccdkh</td>
+                <td>@client.Tuoi</td>
+                <td>@client.MaloaikhachNavigation.Tenloaikhach</td>                              
+                <td>@client.Tel</td>      
+                <td>@client.Diachikh</td>
+                
+                
+                <td>
+                    <a asp-action="Update" asp-route-clientid="@client.Makh" class="btn btn-info btn-sm rounded">Cập nhật</a>
+                    <form asp-action="Delete" asp-route-clientid="@client.Makh" class="d-inline">
+                        <input type="hidden" name="manager" value="@(TempData["Manager"].ToString())" />
+                        <button type="submit" class="btn btn-danger btn-sm rounded">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item @(Model.PageIndex == 1 ? "disabled" : "")">
+                    <a class="page-link text-black" asp-route-pageNumber="1"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-currentFilter2="@ViewData["CurrentFilter2"]">
+                        <span>Đầu</span>
+                    </a>
+                </li>
+                <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                    <a class="page-link text-black" asp-route-pageNumber="@(Model.PageIndex - 1)"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-currentFilter2="@ViewData["CurrentFilter2"]">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </li>
+
+                @if (Model.TotalPages <= 5)
+                {
+                    for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                            <a class="page-link text-black" asp-route-pageNumber="@i"
+                               asp-route-SortOrder="@ViewData["SortOrder"]"
+                               asp-route-sortColumn="@ViewData["sortColumn"]"
+                               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                               asp-route-currentFilter2="@ViewData["CurrentFilter2"]">@i</a>
+                        </li>
+                    }
+                }
+                else
+                {
+                    @if (Model.PageIndex <= 3)
+                    {
+                        for (int i = 1; i <= 5; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link text-black" asp-route-pageNumber="@i"
+                                   asp-route-SortOrder="@ViewData["SortOrder"]"
+                                   asp-route-sortColumn="@ViewData["sortColumn"]"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                   asp-route-currentFilter2="@ViewData["CurrentFilter2"]">@i</a>
+                            </li>
+                        }
+                    }
+                    else if (Model.PageIndex >= Model.TotalPages - 2)
+                    {
+                        for (int i = Model.TotalPages - 4; i <= Model.TotalPages; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link text-black" asp-route-pageNumber="@i"
+                                   asp-route-SortOrder="@ViewData["SortOrder"]"
+                                   asp-route-sortColumn="@ViewData["sortColumn"]"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                   asp-route-currentFilter2="@ViewData["CurrentFilter2"]">@i</a>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        for (int i = Model.PageIndex - 2; i <= Model.PageIndex + 2; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link text-black" asp-route-pageNumber="@i"
+                                   asp-route-SortOrder="@ViewData["SortOrder"]"
+                                   asp-route-sortColumn="@ViewData["sortColumn"]"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                   asp-route-currentFilter2="@ViewData["CurrentFilter2"]">@i</a>
+                            </li>
+                        }
+                    }
+                }
+
+                <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                    <a class="page-link text-black" asp-route-pageNumber="@(Model.PageIndex + 1)"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-currentFilter2="@ViewData["CurrentFilter2"]">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="page-item @(Model.PageIndex == Model.TotalPages ? "disabled" : "")">
+                    <a class="page-link text-black" asp-route-pageNumber="@Model.TotalPages"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-currentFilter2="@ViewData["CurrentFilter2"]">
+                        <span>Cuối</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script>
+    // Function to store selected client type and search string in local storage
+    function storeClientTypeAndSearchString() {
+        const clientType = document.getElementById('clientType').value;
+        const searchString = document.getElementById('searchString').value;
+        localStorage.setItem('savedClientType', clientType);
+        localStorage.setItem('savedSearchString', searchString);
+    }
+
+    // Function to retrieve and set client type and search string from local storage
+    function setClientTypeAndSearchString() {
+        const savedClientType = localStorage.getItem('savedClientType');
+        const savedSearchString = localStorage.getItem('savedSearchString');
+        if (savedClientType) {
+            document.getElementById('clientType').value = savedClientType;
+        }
+        if (savedSearchString) {
+            document.getElementById('searchString').value = savedSearchString;
+        }
+    }
+
+    // Function to handle form submission
+    function handleFormSubmission() {
+        storeRoomTypeAndSearchString();
+    }
+
+    // Function to handle client type change
+    function handleClientTypeChange() {
+        storeClientTypeAndSearchString();
+        document.getElementById('searchForm').submit();
+    }
+
+    // Populate client type and search string on page load
+    window.onload = function () {
+        setClientTypeAndSearchString();
+    };
+
+    // Add event listener to form submission
+    document.getElementById('searchForm').addEventListener('submit', function () {
+        handleFormSubmission();
+    });
+
+    // Add event listener to room type change
+    document.getElementById('clientType').addEventListener('change', function () {
+        handleClientTypeChange();
+    });
+</script>
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}

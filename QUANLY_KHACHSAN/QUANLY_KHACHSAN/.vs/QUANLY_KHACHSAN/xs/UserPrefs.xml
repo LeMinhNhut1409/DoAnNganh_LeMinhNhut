@@ -1,0 +1,101 @@
+﻿<Properties StartupConfiguration="{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|https">
+  <MonoDevelop.Ide.ItemProperties.QUANLY__KHACHSAN PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="QUANLY_KHACHSAN/Controllers/ClientController.cs">
+    <Files>
+      <File FileName="QUANLY_KHACHSAN/Models/QUANLY_KHACHSANContext.cs" />
+      <File FileName="QUANLY_KHACHSAN/appsettings.json" />
+      <File FileName="QUANLY_KHACHSAN/Views/Shared/_Layout.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/HomeController.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/Shared/Error.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Models/Phieuthue.cs" />
+      <File FileName="QUANLY_KHACHSAN/Models/Khachhang.cs" />
+      <File FileName="QUANLY_KHACHSAN/Models/Loaiphong.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Program.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/_ViewStart.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Account/Index.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Account/Login.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Shared/_ManagerLayout.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Filters/CustomAuthorizationAttribute.cs" />
+      <File FileName="QUANLY_KHACHSAN/Models/AuthorizationModel.cs" />
+      <File FileName="QUANLY_KHACHSAN/appsettings.Development.json" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/AccountController.cs" />
+      <File FileName="QUANLY_KHACHSAN/Repositories/TaikhoanRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ITaikhoanRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/INhanvienRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Repositories/NhanvienRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/_ViewImports.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Models/Taikhoan.cs" />
+      <File FileName="QUANLY_KHACHSAN/Models/Phong.cs" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/ManagerController.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/Manager/Index.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Shared/_StaffLayout.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/StaffController.cs" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/NhanvienController.cs" />
+      <File FileName="QUANLY_KHACHSAN/ViewModels/PaginatedList.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/Nhanvien/Create.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Nhanvien/NhanvienList.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Nhanvien/Update.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Models/Nhanvien.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/Account/Register.cshtml" Line="85" Column="10" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IPhongRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Repositories/PhieuthueRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IPhieuthueRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Repositories/PhongRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ILoaiphongRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Repositories/LoaiphongRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/ClientController.cs" Line="146" Column="10" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/SettingLoaiKhachController.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IKhachhangRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ILoaiKhachRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Repositories/KhachhangRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Repositories/LoaiKhachRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/LoaiPhongController.cs" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/RoomController.cs" />
+      <File FileName="QUANLY_KHACHSAN/ViewModels/BillRoom.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/Room/RoomList.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Room/Create.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Room/Update.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/LoaiPhong/CreateRoomType.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/LoaiPhong/RoomType.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/LoaiPhong/UpdateRoomType.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Models/ErrorViewModel.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/Staff/Index.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Client/ClientList.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Client/Create.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="QUANLY_KHACHSAN" expanded="True">
+            <Node name="QUANLY_KHACHSAN" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="ClientController.cs" selected="True" />
+              </Node>
+              <Node name="InterfacesRepositories" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Client" expanded="True" />
+                <Node name="LoaiPhong" expanded="True" />
+                <Node name="Manager" expanded="True" />
+                <Node name="Nhanvien" expanded="True" />
+                <Node name="Room" expanded="True" />
+                <Node name="SettingLoaiKhach" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Staff" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

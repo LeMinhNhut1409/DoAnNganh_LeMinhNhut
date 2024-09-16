@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj": {}
+    "/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj": {}
   },
   "projects": {
-    "/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj": {
+    "/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj",
+        "projectUniqueName": "/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj",
         "projectName": "QUANLY_KHACHSAN",
-        "projectPath": "/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj",
+        "projectPath": "/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj",
         "packagesPath": "/Users/minhnhut/.nuget/packages/",
-        "outputPath": "/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/obj/",
+        "outputPath": "/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/minhnhut/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xZJi0AmWKakG2FeZFe3OB/5AHVsonko6MlBuVHUgjILbEUn+GdF7jSrdcMuvj73+WyWUf46cvVuH8NVwemMCHg==",
+  "dgSpecHash": "lfRfNOdx3743qIJorLcTZZSJmU6mPGk4+1GU4G3tjBv7fXNeNr72hXzCYviulqoBEFjrzc8f172VPuggz5G/Qw==",
   "success": true,
-  "projectFilePath": "/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj",
+  "projectFilePath": "/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN.csproj",
   "expectedPackageFiles": [
     "/Users/minhnhut/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/minhnhut/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

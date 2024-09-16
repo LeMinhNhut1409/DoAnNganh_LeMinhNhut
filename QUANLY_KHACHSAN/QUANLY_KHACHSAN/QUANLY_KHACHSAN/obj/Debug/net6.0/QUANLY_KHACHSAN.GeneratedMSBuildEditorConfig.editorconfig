@@ -9,125 +9,133 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QUANLY_KHACHSAN
 build_property.RootNamespace = QUANLY_KHACHSAN
-build_property.ProjectDir = /Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/
+build_property.ProjectDir = /Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN
+build_property.MSBuildProjectDirectory = /Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Account/Index.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Account/Login.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Account/Register.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/ClientList.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/ClientList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50L0NsaWVudExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/Create.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50L0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/Delete.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50L0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/Details.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50L0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/Update.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Client/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50L1VwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/LoaiPhong/CreateRoomType.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/LoaiPhong/CreateRoomType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9haVBob25nL0NyZWF0ZVJvb21UeXBlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/LoaiPhong/RoomType.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/LoaiPhong/RoomType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9haVBob25nL1Jvb21UeXBlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/LoaiPhong/UpdateRoomType.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/LoaiPhong/UpdateRoomType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9haVBob25nL1VwZGF0ZVJvb21UeXBlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Manager/Index.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Manager/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Nhanvien/Create.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Nhanvien/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmhhbnZpZW4vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Nhanvien/NhanvienList.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Nhanvien/NhanvienList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmhhbnZpZW4vTmhhbnZpZW5MaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Nhanvien/Update.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Nhanvien/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmhhbnZpZW4vVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Room/Create.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Rent/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVudC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Rent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVudC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Room/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Room/RoomList.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Room/RoomList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbS9Sb29tTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Room/Update.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Room/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9vbS9VcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/SettingLoaiKhach/ClientType.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/SettingLoaiKhach/ClientType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ0xvYWlLaGFjaC9DbGllbnRUeXBlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/SettingLoaiKhach/CreateClientType.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/SettingLoaiKhach/CreateClientType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ0xvYWlLaGFjaC9DcmVhdGVDbGllbnRUeXBlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/SettingLoaiKhach/UpdateClientType.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/SettingLoaiKhach/UpdateClientType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ0xvYWlLaGFjaC9VcGRhdGVDbGllbnRUeXBlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/Error.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_ManagerLayout.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_ManagerLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19NYW5hZ2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_StaffLayout.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_StaffLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TdGFmZkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Staff/Index.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Staff/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhZmYvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/_ViewImports.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/_ViewStart.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Downloads/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_Layout.cshtml]
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hmcek22cg1

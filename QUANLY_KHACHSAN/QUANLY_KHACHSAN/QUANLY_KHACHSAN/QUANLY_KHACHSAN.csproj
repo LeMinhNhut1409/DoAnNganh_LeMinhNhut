@@ -47,5 +47,6 @@
     <Folder Include="Views\SettingLoaiKhach\" />
     <Folder Include="Views\Room\" />
     <Folder Include="Views\LoaiPhong\" />
+    <Folder Include="Views\Rent\" />
   </ItemGroup>
 </Project>

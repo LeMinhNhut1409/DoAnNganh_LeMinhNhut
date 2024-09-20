@@ -1,0 +1,87 @@
+﻿@model QUANLY_KHACHSAN.ViewModels.Bill
+@{
+    ViewData["Title"] = "Hóa Đơn";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+<div class="text-center">
+    <h2 class="display-4" style="color:red;">HÓA ĐƠN</h2>
+</div>
+    <p><strong>Tên khách hàng:</strong> @Model.khachhang.Tenkh</p>
+    <p><strong>CCCD:</strong> @Model.khachhang.Cccdkh</p>
+    <p><strong>Địa chỉ:</strong> @Model.khachhang.Diachikh</p>
+    <p><strong>Ngày lập hóa đơn:</strong> @DateTime.Now.ToString("dd/MM/yyyy")</p>
+
+    <h3 style="text-align:center">DANH SÁCH PHIẾU THUÊ</h3>
+    <table class=" table table-striped table-bordered text-center">
+        <thead class="thead-dark">
+            <tr>
+                <th>Tên Phòng</th>
+                <th>Loại phòng</th>
+                <th>Đơn giá</th>
+                <th>Số ngày ở</th>
+                <th>Tổng tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var phieuthue in Model.phieuthues)
+            {
+                <tr>
+                    <td>@phieuthue.MapNavigation.Tenphong</td>
+                    <td>@phieuthue.MapNavigation.MaloaiphongNavigation.Tenloai</td>
+                    <td>@phieuthue.MapNavigation.MaloaiphongNavigation.Dongia</td>
+                    <td>
+                        @{
+                            DateTime ngayLapHoaDon = phieuthue.Ngaylappt;
+                            DateTime ngayHienTai = DateTime.Now;
+                            TimeSpan thoiGianThue = ngayHienTai - ngayLapHoaDon;
+
+                            if (ngayLapHoaDon.Date == ngayHienTai.Date)
+                            {
+                                thoiGianThue = TimeSpan.FromDays(1);
+                            }
+
+                            @thoiGianThue.Days
+                        }
+                    </td>
+
+
+                    @{
+                        var totalAmount = phieuthue.MapNavigation.MaloaiphongNavigation.Dongia * thoiGianThue.Days;
+                    }
+                    <td>@totalAmount</td>
+
+                    <!-- Trong vòng lặp foreach -->
+                    <td>
+
+                        <a asp-action="Create" asp-controller="Bill"
+                           asp-route-khanghangID="@Model.khachhang.Makh"
+                           asp-route-rentID="@phieuthue.Mapt"
+                           class="btn btn-primary">Thanh toán</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+        <form asp-action="Index" asp-controller="Bill" method="get" style="display:inline;">
+            <button type="submit" class="btn btn-warning">Hủy lập hóa đơn</button>
+        </form>
+
+    </div>
+

@@ -1,0 +1,45 @@
+﻿@model QUANLY_KHACHSAN.ViewModels.test1
+@{
+    ViewData["Title"] = "Lập Hóa Đơn";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+<div class="text-center">
+    <h2 style="color:red;">LẬP HÓA ĐƠN</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <form asp-action="Test2" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Ngaylaphd" class="control-label">Ngày Lập Hóa Đơn</label>
+                    <input asp-for="Ngaylaphd" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" readonly />
+                    <span asp-validation-for="Ngaylaphd" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CCCD" class="control-label">Nhập CCCD Khách Hàng</label>
+                    <input asp-for="CCCD" class="form-control" />
+                    <span asp-validation-for="CCCD" class="text-danger"></span>
+                </div>
+                <div class="form-group text-right">
+                    <!-- Align button to the right -->
+                    <button type="submit" class="btn btn-primary">Tạo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+

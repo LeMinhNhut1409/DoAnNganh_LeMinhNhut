@@ -6,6 +6,7 @@ using QUANLY_KHACHSAN.InterfacesRepositories;
 using QUANLY_KHACHSAN.Models;
 using QUANLY_KHACHSAN.Repositories;
 using QUANLY_KHACHSAN.ViewModels;
+using Microsoft.Data.SqlClient;
 
 public class RentController : Controller
 {
@@ -13,6 +14,7 @@ public class RentController : Controller
     private readonly IKhachhangRepository _clientRepo;
     private readonly INhanvienRepository _employeeRepo;
     private readonly IPhongRepository _roomRepo;
+
     public RentController(IPhieuthueRepository rentRepository, IKhachhangRepository clientRepository, INhanvienRepository employeeRepo, IPhongRepository roomRepo)
     {
         _rentRepository = rentRepository;
@@ -21,13 +23,13 @@ public class RentController : Controller
         _employeeRepo = employeeRepo;
     }
 
-    [HttpGet]
     public async Task<IActionResult> Index(int manager)
     {
         TempData["Manager"] = manager;
         var rents = await _rentRepository.GetAllAsync();
         return View(rents);
     }
+
 
     [HttpGet]
     public async Task<IActionResult> Details(int id, int manager)

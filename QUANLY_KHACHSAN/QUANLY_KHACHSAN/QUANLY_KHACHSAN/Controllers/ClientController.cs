@@ -102,9 +102,10 @@ namespace QUANLY_KHACHSAN.Controllers
         {
             TempData["Manager"] = manager;
             var clientTypes = await clientRepo.GetAllLoaikhach();
-            var rooms = roomRepo.GetAllAsync();
             ViewBag.ClientType = new SelectList(clientTypes, "Maloaikhach", "Tenloaikhach");
-            ViewBag.ClientRoom = new SelectList(rooms, "Map", "Tenphong");
+            var roomList = await roomRepo.GetRoomsByTinhtrangAsync(1);
+            ViewData["Map"] = new SelectList(roomList, "Map", "Tenphong");
+            
             return View();
         }
 
@@ -122,12 +123,18 @@ namespace QUANLY_KHACHSAN.Controllers
                 var clientTypes = await clientRepo.GetAllLoaikhach(); // Fetch client types again
                 var rooms = roomRepo.GetAllAsync();
                 ViewBag.ClientType = new SelectList(clientTypes, "Maloaikhach", "Tenloaikhach");
-                ViewBag.ClientRoom = new SelectList(rooms, "Map", "Tenphong");
+                var room = await roomRepo.GetByIdAsync(khach.Map);
+                if (room != null)
+                {
+                    room.Tinhtrang = 2; // Update Tinhtrang to the desired value
+                    await roomRepo.UpdateAsync(room);
+                }
+                
                 return View(khach);
             }
 
             await clientRepo.AddAsync(khach);
-            return RedirectToAction("ClientList", new { manager = manager });
+            return RedirectToAction(nameof(ClientList), new { manager = manager });
         }
 
 

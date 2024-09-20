@@ -1,6 +1,6 @@
 ﻿@model Khachhang
 @{
-    ViewData["Title"] = "UPDATE CLIENT INFO";
+    ViewData["Title"] = "Chỉnh sửa khách hàng";
     // Kiểm tra vai trò từ claims
     var role = User.FindFirst("Role")?.Value;
 
@@ -20,7 +20,7 @@
 }
 
 <div class="text-center">
-    <h2 class="display-4">CẬP NHẬT THÔNG TIN KHÁCH HÀNG</h2>
+    <h2 class="display-4" style="color:red;"> CẬP NHẬT THÔNG TIN KHÁCH HÀNG</h2>
 </div>
 
 <div class="container mt-5">

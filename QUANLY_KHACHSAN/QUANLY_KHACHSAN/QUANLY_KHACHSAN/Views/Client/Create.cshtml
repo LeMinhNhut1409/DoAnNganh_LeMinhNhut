@@ -1,6 +1,6 @@
 ﻿@model Khachhang
 @{
-    ViewData["Title"] = "ADD CLIENT INFO";
+    ViewData["Title"] = "Tạo khách hàng";
     // Kiểm tra vai trò từ claims
     var role = User.FindFirst("Role")?.Value;
 
@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-group">
                     <label asp-for="Map" class="font-weight-bold">Tên Phòng</label>
-                    <select class="form-control" asp-for="Map" id="clientType" asp-items="ViewBag.ClientRoom"></select>
+                    <select class="form-control" asp-for="Map" id="clientType" asp-items="ViewBag.Map"></select>
                     <span asp-validation-for="Map" class="text-danger"></span>
                 </div>
 

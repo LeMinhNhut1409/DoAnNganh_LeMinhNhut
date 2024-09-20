@@ -33,6 +33,10 @@
     <None Remove="Views\SettingLoaiKhach\" />
     <None Remove="Views\Room\" />
     <None Remove="Views\LoaiPhong\" />
+    <None Remove="Views\CreateCustomer\" />
+    <None Remove="Views\Phuthu\" />
+    <None Remove="Views\Bill\" />
+    <None Remove="Views\SaleReport\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />
@@ -48,5 +52,9 @@
     <Folder Include="Views\Room\" />
     <Folder Include="Views\LoaiPhong\" />
     <Folder Include="Views\Rent\" />
+    <Folder Include="Views\CreateCustomer\" />
+    <Folder Include="Views\Phuthu\" />
+    <Folder Include="Views\Bill\" />
+    <Folder Include="Views\SaleReport\" />
   </ItemGroup>
 </Project>

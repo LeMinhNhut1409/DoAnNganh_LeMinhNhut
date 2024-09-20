@@ -14,7 +14,7 @@ namespace QUANLY_KHACHSAN.Models
         public DateTime Ngaylaphd { get; set; }
         public DateTime Ngaydat { get; set; }
         public double Tylephuthu { get; set; }
-        public int IdphuThu { get; set; }
+        public int? IdphuThu { get; set; }
         public string Cccd { get; set; } = null!;
 
         public virtual Phuthu IdphuThuNavigation { get; set; } = null!;

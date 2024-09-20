@@ -1,6 +1,6 @@
 ﻿@model QUANLY_KHACHSAN.ViewModels.PaginatedList<Loaikhach>
 @{
-    ViewData["Title"] = "Client type list";
+    ViewData["Title"] = "Danh sách loại khách";
     // Kiểm tra vai trò từ claims
     var role = User.FindFirst("Role")?.Value;
 
@@ -20,9 +20,17 @@
 }
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css" />
+<style>
+    .table-bordered {
+        border: 2px solid black; /* Viền bảng màu đen */
+    }
 
+        .table-bordered th, .table-bordered td {
+            border: 1px solid black; /* Viền ô màu đen */
+        }
+</style>
 <div class="text-center">
-    <h2 class="display-4">QUẢN LÝ LOẠI KHÁCH</h2>
+    <h2 class="display-4" style="color:red;">QUẢN LÝ LOẠI KHÁCH</h2>
 </div>
 
 <div style="display: flex; justify-content: space-between; align-items: center ;width:100%">
@@ -80,7 +88,7 @@
                        asp-route-sortColumn="@ViewData["sortColumn"]"
                        asp-route-currentFilter="@ViewData["CurrentFilter"]"
                        asp-route-currentFilter2="@ViewData["CurrentFilter2"]">
-                        <span>First</span>
+                        <span>Đầu</span>
                     </a>
                 </li>
                 <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
@@ -157,7 +165,7 @@
                        asp-route-SortOrder="@ViewData["SortOrder"]"
                        asp-route-sortColumn="@ViewData["sortColumn"]"
                        asp-route-currentFilter="@ViewData["CurrentFilter"]">
-                        <span>Last</span>
+                        <span>Cuối</span>
                     </a>
                 </li>
             </ul>

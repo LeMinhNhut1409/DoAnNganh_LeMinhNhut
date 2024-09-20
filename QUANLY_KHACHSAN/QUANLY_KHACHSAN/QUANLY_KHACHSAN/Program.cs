@@ -37,10 +37,10 @@ builder.Services.AddScoped<ILoaiKhachRepository, LoaiKhachRepository>();
 builder.Services.AddScoped<IKhachhangRepository, KhachhangRepository>();
 builder.Services.AddScoped<INhanvienRepository, NhanvienRepository>();
 builder.Services.AddScoped<ITaikhoanRepository, TaikhoanRepository>();
-//builder.Services.AddScoped<ISaleReport, SaleReportRepository>();
+builder.Services.AddScoped<ISaleReportRepository, SaleReportRepository>();
 builder.Services.AddScoped<IPhieuthueRepository, PhieuthueRepository>();
-//builder.Services.AddScoped<IPhuthuRepository, PhuthuRepository>();
-//builder.Services.AddScoped<IBillRepository, BillRepository>();
+builder.Services.AddScoped<IPhuthuRepository, PhuthuRepository>();
+builder.Services.AddScoped<IBillRepository, BillRepository>();
 // Add IHttpContextAccessor
 builder.Services.AddHttpContextAccessor();
 

@@ -1,6 +1,6 @@
 ﻿@model Loaikhach
 @{
-    ViewData["Title"] = "Create client";
+    ViewData["Title"] = "Thêm loại khách";
     // Kiểm tra vai trò từ claims
     var role = User.FindFirst("Role")?.Value;
 
@@ -22,7 +22,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="text-center">
-                <h2 class="display-4">TẠO LOẠI KHÁCH MỚI</h2>
+                <h2 class="display-4" style="color:red;">TẠO LOẠI KHÁCH MỚI</h2>
             </div>
             <form asp-action="CreateClientType" method="post">
                 <div class="row mt-4">

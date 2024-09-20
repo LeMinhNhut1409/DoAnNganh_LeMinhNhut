@@ -1,0 +1,80 @@
+﻿@model QUANLY_KHACHSAN.Models.Hoadon
+
+@{
+    ViewData["Title"] = "Chi tiết hoá đơn";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+
+<h1 style="color: red;">CHI TIẾT HÓA ĐƠN</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tên Khách Hàng
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tenkh)
+        </dd>
+        <dt class="col-sm-2">
+            CCCD
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cccd)
+        </dd>
+        <dt class="col-sm-2">
+            Tên Phòng
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tenphong)
+        </dd>
+        <dt class="col-sm-2">
+            Ngày Đến
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ngaydat)
+        </dd>
+        <dt class="col-sm-2">
+            Ngày Đi
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ngaylaphd)
+        </dd>
+        <dt class="col-sm-2">
+            Số Ngày Ở
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Songayo)
+        </dd>
+        <dt class="col-sm-2">
+            Tổng Tiền
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tongtien)
+        </dd>
+        <dt class="col-sm-2">
+            Phụ Thu
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tylephuthu)%
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-warning">Quay lại lịch sử hóa đơn</a>
+</div>

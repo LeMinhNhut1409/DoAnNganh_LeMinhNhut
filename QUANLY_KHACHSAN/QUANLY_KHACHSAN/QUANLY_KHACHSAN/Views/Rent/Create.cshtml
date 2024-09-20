@@ -1,7 +1,7 @@
 ﻿@model QUANLY_KHACHSAN.Models.Phieuthue
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Thêm phiếu thuê";
     var role = User.FindFirst("Role")?.Value;
 
     // Đặt layout dựa trên vai trò
@@ -39,7 +39,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
-<h1 class="text-center mb-3">TẠO PHIẾU THUÊ</h1>
+<h1 class="text-center mb-3" style="color:red;">TẠO PHIẾU THUÊ</h1>
 <div class="centered-container">
     <div class="col-md-4">
         <form asp-action="Create">

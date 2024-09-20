@@ -1,0 +1,92 @@
+﻿@model QUANLY_KHACHSAN.Models.Phieuthue
+
+@{
+    ViewData["Title"] = "Chỉnh sửa phiếu thuê";
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+
+<style>
+    .centered-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    .right-aligned {
+        text-align: right;
+    }
+
+    .form-group-label {
+        margin-bottom: 3px; /* Thêm khoảng cách giữa các nhóm label-input */
+    }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+<h1 class="text-center mb-3" style="color:red;">CHỈNH SỬA PHIẾU THUÊ</h1>
+<div class="centered-container">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Mapt" name="id" value="@Model.Mapt" />
+            <div class="mb-3"></div>
+
+            <div class="form-group form-group-label">
+                <label asp-for="Manv" class="control-label">Mã nhân viên</label>
+                <select asp-for="Manv" class="form-control" asp-items="ViewBag.Manv"></select>
+                <span asp-validation-for="Manv" class="text-danger"></span>
+            </div>
+            <div class="form-group form-group-label">
+                <label asp-for="Ngaylappt" class="control-label">Ngày lập phiếu thuê</label>
+                <input asp-for="Ngaylappt" class="form-control" type="date" />
+                <span asp-validation-for="Ngaylappt" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3"></div>
+
+            <div class="form-group form-group-label">
+                <label asp-for="Cccd" class="control-label">Căn cước công dân</label>
+                <input asp-for="Cccd" class="form-control" />
+                <span asp-validation-for="Cccd" class="text-danger"></span>
+            </div>
+            <div class="mb-3"></div>
+
+            <div class="form-group form-group-label">
+                <label asp-for="Map" class="control-label">Mã phòng</label>
+                <select asp-for="Map" class="form-control" asp-items="ViewBag.Map"></select>
+                <span asp-validation-for="Map" class="text-danger"></span>
+            </div>
+            <div class="mb-3"></div>
+
+            <div class="form-group d-flex justify-content-between">
+                <a type="button" asp-action="Index" asp-controller="Rent" class="btn btn-warning">Danh sách phiếu thuê</a>
+                <input hidden name="roomOldId" value="@Model.Map" />
+                <button type="submit" class="btn btn-primary right-aligned">Lưu</button>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+@*section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+*@

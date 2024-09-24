@@ -50,6 +50,7 @@
             <label style="margin-right: 10px;">Tháng</label>
             <select name="month" class="rounded" id="monthDropdown"></select>
         </div>
+       
     </form>
 </div>
 
@@ -77,6 +78,10 @@
         }
     </tbody>
 </table>
+<div>
+    <a asp-action="ExportToPdf" class="btn btn-danger btn-export">Xuất PDF</a>
+    <a asp-action="ExportToExcel" class="btn btn-success btn-export">Xuất Excel</a>
+</div>
 <script>
     // Function to populate the month dropdown
     function populateMonthDropdown(selectedMonth) {

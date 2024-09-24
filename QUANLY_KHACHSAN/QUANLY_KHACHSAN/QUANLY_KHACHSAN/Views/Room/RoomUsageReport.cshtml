@@ -39,7 +39,7 @@
 
 <h2 class="display-4" style="text-align: center; color:red;">BÁO CÁO TỶ LỆ SỬ DỤNG PHÒNG</h2>
 
-<div style="display: flex; justify-content: space-between; align-items: center; width: 60% ;margin-bottom: 15px; margin-left: auto; margin-right: auto;">
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100% ;margin-bottom: 5px">
     <form id="searchForm" asp-controller="Room" asp-action="RoomUsageReport" method="get" class="d-flex">
         <div class="input-group" style="display: flex; align-items: center;">
             <label style="margin-right: 10px;">Tháng</label>
@@ -85,19 +85,18 @@
         }
     </tbody>
 </table>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 <script>
-    jQuery(document).ready(function ($) {
-        var table = $('.table').DataTable({
-            paging: false, // Disable paging
-            searching: false // Disable searching
-        });
+    //jQuery(document).ready(function ($) {
+    //    var table = $('.table').DataTable({
+    //        paging: false, // Disable paging
+    //        searching: false // Disable searching
+    //    });
 
-        // Apply sorting to all columns by default (you can specify columns for sorting if needed)
-        table.order([3, 'desc']).draw();
-    });
+    //    // Apply sorting to all columns by default (you can specify columns for sorting if needed)
+    //    table.order([3, 'desc']).draw();
+    //});
     // Function to populate the month dropdown
     function populateMonthDropdown(selectedMonth) {
         const monthDropdown = document.querySelector("#monthDropdown");

@@ -18,6 +18,15 @@
         Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
     }
 }
+<style>
+    .table-bordered {
+        border: 2px solid black; /* Viền bảng màu đen */
+    }
+
+        .table-bordered th, .table-bordered td {
+            border: 1px solid black; /* Viền ô màu đen */
+        }
+</style>
 <div class="text-center">
     <h2 class="display-4" style="color:red;">HÓA ĐƠN</h2>
 </div>
@@ -26,7 +35,7 @@
     <p><strong>Địa chỉ:</strong> @Model.khachhang.Diachikh</p>
     <p><strong>Ngày lập hóa đơn:</strong> @DateTime.Now.ToString("dd/MM/yyyy")</p>
 
-    <h3 style="text-align:center">DANH SÁCH PHIẾU THUÊ</h3>
+    <h3 class="display-5" style="text-align:center; color:red;">DANH SÁCH PHIẾU THUÊ</h3>
     <table class=" table table-striped table-bordered text-center">
         <thead class="thead-dark">
             <tr>

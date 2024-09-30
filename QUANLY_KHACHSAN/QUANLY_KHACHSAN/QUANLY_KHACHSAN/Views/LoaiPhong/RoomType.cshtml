@@ -1,22 +1,7 @@
 ﻿@model QUANLY_KHACHSAN.ViewModels.PaginatedList<Loaiphong>
 @{
     ViewData["Title"] = "Danh sách loại phòng";
-    // Kiểm tra vai trò từ claims
-    var role = User.FindFirst("Role")?.Value;
-
-    // Đặt layout dựa trên vai trò
-    if (role == "Staff")
-    {
-        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
-    }
-    else if (role == "Manager")
-    {
-        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
-    }
-    else
-    {
-        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
-    }
+    Layout = "_ManagerLayout";
 }
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css" />

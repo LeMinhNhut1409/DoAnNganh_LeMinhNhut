@@ -1,18 +1,13 @@
 ﻿<Properties StartupConfiguration="{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|https">
-  <MonoDevelop.Ide.ItemProperties.QUANLY__KHACHSAN PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="QUANLY_KHACHSAN/Views/Room/RoomUsageReport.cshtml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="QUANLY_KHACHSAN/Views/LoaiPhong/UpdateRoomType.cshtml">
     <Files>
-      <File FileName="QUANLY_KHACHSAN/Views/Nhanvien/NhanvienList.cshtml" Line="33" Column="29" IsPinned="True" />
+      <File FileName="QUANLY_KHACHSAN/Views/Nhanvien/NhanvienList.cshtml" Line="4" Column="31" IsPinned="True" />
       <File FileName="QUANLY_KHACHSAN/Views/Rent/Index.cshtml" Line="5" Column="38" IsPinned="True" />
       <File FileName="QUANLY_KHACHSAN/Models/QUANLY_KHACHSANContext.cs" />
-      <File FileName="QUANLY_KHACHSAN/appsettings.json" Line="1" Column="1" />
-      <File FileName="QUANLY_KHACHSAN/Views/Shared/_Layout.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/appsettings.json" />
+      <File FileName="QUANLY_KHACHSAN/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
       <File FileName="QUANLY_KHACHSAN/Controllers/HomeController.cs" />
       <File FileName="QUANLY_KHACHSAN/Views/Shared/Error.cshtml" />
       <File FileName="QUANLY_KHACHSAN/Models/Phieuthue.cs" />
@@ -20,60 +15,60 @@
       <File FileName="QUANLY_KHACHSAN/Models/Loaiphong.cs" />
       <File FileName="QUANLY_KHACHSAN/Views/Shared/_ValidationScriptsPartial.cshtml" />
       <File FileName="QUANLY_KHACHSAN/Program.cs" />
-      <File FileName="QUANLY_KHACHSAN/Views/_ViewStart.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Account/Index.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Account/Login.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Shared/_ManagerLayout.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/Views/Account/Index.cshtml" Line="1" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/Views/Account/Login.cshtml" Line="1" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/Views/Shared/_ManagerLayout.cshtml" Line="1" Column="1" />
       <File FileName="QUANLY_KHACHSAN/Filters/CustomAuthorizationAttribute.cs" />
       <File FileName="QUANLY_KHACHSAN/Models/AuthorizationModel.cs" />
       <File FileName="QUANLY_KHACHSAN/appsettings.Development.json" />
-      <File FileName="QUANLY_KHACHSAN/Controllers/AccountController.cs" Line="1" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/AccountController.cs" />
       <File FileName="QUANLY_KHACHSAN/Repositories/TaikhoanRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ITaikhoanRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/INhanvienRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ITaikhoanRepository.cs" Line="14" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/INhanvienRepository.cs" Line="38" Column="70" />
       <File FileName="QUANLY_KHACHSAN/Repositories/NhanvienRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/Views/_ViewImports.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/_ViewImports.cshtml" Line="1" Column="1" />
       <File FileName="QUANLY_KHACHSAN/Models/Taikhoan.cs" />
       <File FileName="QUANLY_KHACHSAN/Models/Phong.cs" />
       <File FileName="QUANLY_KHACHSAN/Controllers/ManagerController.cs" />
-      <File FileName="QUANLY_KHACHSAN/Views/Manager/Index.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Shared/_StaffLayout.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Manager/Index.cshtml" Line="10" Column="26" />
+      <File FileName="QUANLY_KHACHSAN/Views/Shared/_StaffLayout.cshtml" Line="160" Column="17" />
       <File FileName="QUANLY_KHACHSAN/Controllers/StaffController.cs" />
       <File FileName="QUANLY_KHACHSAN/Controllers/NhanvienController.cs" />
       <File FileName="QUANLY_KHACHSAN/ViewModels/PaginatedList.cs" />
-      <File FileName="QUANLY_KHACHSAN/Views/Nhanvien/Create.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Nhanvien/Update.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Nhanvien/Create.cshtml" Line="4" Column="31" />
+      <File FileName="QUANLY_KHACHSAN/Views/Nhanvien/Update.cshtml" Line="7" Column="36" />
       <File FileName="QUANLY_KHACHSAN/Models/Nhanvien.cs" />
-      <File FileName="QUANLY_KHACHSAN/Views/Account/Register.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IPhongRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Views/Account/Register.cshtml" Line="17" Column="27" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IPhongRepository.cs" Line="46" Column="52" />
       <File FileName="QUANLY_KHACHSAN/Repositories/PhieuthueRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IPhieuthueRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IPhieuthueRepository.cs" Line="71" Column="67" />
       <File FileName="QUANLY_KHACHSAN/Repositories/PhongRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ILoaiphongRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ILoaiphongRepository.cs" Line="25" Column="56" />
       <File FileName="QUANLY_KHACHSAN/Repositories/LoaiphongRepository.cs" />
       <File FileName="QUANLY_KHACHSAN/Controllers/ClientController.cs" />
       <File FileName="QUANLY_KHACHSAN/Controllers/SettingLoaiKhachController.cs" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IKhachhangRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ILoaiKhachRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IKhachhangRepository.cs" Line="50" Column="58" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ILoaiKhachRepository.cs" Line="24" Column="57" />
       <File FileName="QUANLY_KHACHSAN/Repositories/KhachhangRepository.cs" />
       <File FileName="QUANLY_KHACHSAN/Repositories/LoaiKhachRepository.cs" />
       <File FileName="QUANLY_KHACHSAN/Controllers/LoaiPhongController.cs" />
-      <File FileName="QUANLY_KHACHSAN/Controllers/RoomController.cs" Line="155" Column="10" />
-      <File FileName="QUANLY_KHACHSAN/ViewModels/BillRoom.cs" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/RoomController.cs" />
+      <File FileName="QUANLY_KHACHSAN/ViewModels/BillRoom.cs" Line="1" Column="1" />
       <File FileName="QUANLY_KHACHSAN/Views/Room/RoomList.cshtml" />
       <File FileName="QUANLY_KHACHSAN/Views/Room/Create.cshtml" />
       <File FileName="QUANLY_KHACHSAN/Views/Room/Update.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/LoaiPhong/CreateRoomType.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/LoaiPhong/RoomType.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/LoaiPhong/UpdateRoomType.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/LoaiPhong/CreateRoomType.cshtml" Line="22" Column="15" />
+      <File FileName="QUANLY_KHACHSAN/Views/LoaiPhong/RoomType.cshtml" Line="16" Column="9" />
+      <File FileName="QUANLY_KHACHSAN/Views/LoaiPhong/UpdateRoomType.cshtml" Line="7" Column="60" />
       <File FileName="QUANLY_KHACHSAN/Models/ErrorViewModel.cs" />
-      <File FileName="QUANLY_KHACHSAN/Views/Staff/Index.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Staff/Index.cshtml" Line="10" Column="26" />
       <File FileName="QUANLY_KHACHSAN/Views/Client/ClientList.cshtml" />
       <File FileName="QUANLY_KHACHSAN/Views/Client/Create.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/ViewModels/RentDetailsList.cs" />
-      <File FileName="QUANLY_KHACHSAN/ViewModels/Bill.cs" />
-      <File FileName="QUANLY_KHACHSAN/ViewModels/SaleReportViewModel.cs" />
-      <File FileName="QUANLY_KHACHSAN/ViewModels/test1.cs" />
+      <File FileName="QUANLY_KHACHSAN/ViewModels/RentDetailsList.cs" Line="1" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/ViewModels/Bill.cs" Line="1" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/ViewModels/SaleReportViewModel.cs" Line="1" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/ViewModels/test1.cs" Line="14" Column="1" />
       <File FileName="QUANLY_KHACHSAN/Controllers/RentController.cs" />
       <File FileName="QUANLY_KHACHSAN/Views/Rent/Create.cshtml" />
       <File FileName="QUANLY_KHACHSAN/Views/Rent/Details.cshtml" />
@@ -83,41 +78,52 @@
       <File FileName="QUANLY_KHACHSAN/Views/Client/Update.cshtml" />
       <File FileName="QUANLY_KHACHSAN/Controllers/CreateCustomerController.cs" />
       <File FileName="QUANLY_KHACHSAN/Controllers/PhuThuController.cs" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IPhuthuRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IPhuthuRepository.cs" Line="18" Column="1" />
       <File FileName="QUANLY_KHACHSAN/Repositories/PhuthuRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/Views/Phuthu/Edit.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Phuthu/Edit.cshtml" Line="5" Column="5" />
       <File FileName="QUANLY_KHACHSAN/Models/Phuthu.cs" />
       <File FileName="QUANLY_KHACHSAN/Models/Hoadon.cs" />
-      <File FileName="QUANLY_KHACHSAN/Controllers/BillController.cs" Line="1" Column="1" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IBillRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/Repositories/BillRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/Views/Bill/Index.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Bill/Create.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Bill/test2.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Bill/test.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Bill/Details.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/Bill/Delete.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/BillController.cs" Line="225" Column="52" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/IBillRepository.cs" Line="18" Column="2" />
+      <File FileName="QUANLY_KHACHSAN/Repositories/BillRepository.cs" Line="1" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/Views/Bill/Index.cshtml" Line="1" Column="1" />
+      <File FileName="QUANLY_KHACHSAN/Views/Bill/Create.cshtml" Line="23" Column="46" />
+      <File FileName="QUANLY_KHACHSAN/Views/Bill/test2.cshtml" Line="37" Column="15" />
+      <File FileName="QUANLY_KHACHSAN/Views/Bill/test.cshtml" Line="38" Column="25" />
+      <File FileName="QUANLY_KHACHSAN/Views/Bill/Details.cshtml" Line="23" Column="22" />
+      <File FileName="QUANLY_KHACHSAN/Views/Bill/Delete.cshtml" Line="1" Column="1" />
       <File FileName="QUANLY_KHACHSAN/Models/Loaikhach.cs" />
-      <File FileName="QUANLY_KHACHSAN/Controllers/SaleReportController.cs" Line="120" Column="36" />
-      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ISaleReportRepository.cs" />
+      <File FileName="QUANLY_KHACHSAN/Controllers/SaleReportController.cs" />
+      <File FileName="QUANLY_KHACHSAN/InterfacesRepositories/ISaleReportRepository.cs" Line="7" Column="81" />
       <File FileName="QUANLY_KHACHSAN/Repositories/SaleReportRepository.cs" />
-      <File FileName="QUANLY_KHACHSAN/Views/SaleReport/Index.cshtml" Line="47" Column="6" />
-      <File FileName="QUANLY_KHACHSAN/Views/Room/RoomUsageReport.cshtml" Line="52" Column="7" />
+      <File FileName="QUANLY_KHACHSAN/Views/SaleReport/Index.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/Room/RoomUsageReport.cshtml" Line="12" Column="22" />
       <File FileName="QUANLY_KHACHSAN/Views/Client/Delete.cshtml" />
       <File FileName="QUANLY_KHACHSAN/Views/Client/Details.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/SettingLoaiKhach/ClientType.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/SettingLoaiKhach/CreateClientType.cshtml" />
-      <File FileName="QUANLY_KHACHSAN/Views/SettingLoaiKhach/UpdateClientType.cshtml" />
+      <File FileName="QUANLY_KHACHSAN/Views/SettingLoaiKhach/ClientType.cshtml" Line="4" Column="31" />
+      <File FileName="QUANLY_KHACHSAN/Views/SettingLoaiKhach/CreateClientType.cshtml" Line="4" Column="31" />
+      <File FileName="QUANLY_KHACHSAN/Views/SettingLoaiKhach/UpdateClientType.cshtml" Line="4" Column="31" />
+      <File FileName="QUANLY_KHACHSAN/Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="QUANLY_KHACHSAN">
             <Node name="QUANLY_KHACHSAN">
-              <Node name="Views">
-                <Node name="Room">
-                  <Node name="RoomUsageReport.cshtml" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="CreateCustomer" expanded="True" />
+                <Node name="LoaiPhong" expanded="True">
+                  <Node name="UpdateRoomType.cshtml" selected="True" />
                 </Node>
+                <Node name="Manager" expanded="True" />
+                <Node name="Nhanvien" expanded="True" />
+                <Node name="Phuthu" expanded="True" />
+                <Node name="Room" expanded="True" />
+                <Node name="SaleReport" expanded="True" />
+                <Node name="SettingLoaiKhach" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -125,4 +131,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.QUANLY__KHACHSAN PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

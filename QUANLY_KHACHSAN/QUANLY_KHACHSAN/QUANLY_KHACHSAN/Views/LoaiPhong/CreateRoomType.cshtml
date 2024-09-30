@@ -1,22 +1,7 @@
 ﻿@model Loaiphong
 @{
-        ViewData["Title"] = "Thêm loại phòng";
-        // Kiểm tra vai trò từ claims
-        var role = User.FindFirst("Role")?.Value;
-
-        // Đặt layout dựa trên vai trò
-        if (role == "Staff")
-        {
-            Layout = "_StaffLayout"; // Đặt layout cho nhân viên
-        }
-        else if (role == "Manager")
-        {
-            Layout = "_ManagerLayout"; // Đặt layout cho quản lý
-        }
-        else
-        {
-            Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
-        }
+    ViewData["Title"] = "Thêm loại phòng";
+    Layout = "_ManagerLayout";
 }
 <div class="text-center">
     <h2 class="display-4" style="color:red;">TẠO LOẠI PHÒNG MỚI</h2>

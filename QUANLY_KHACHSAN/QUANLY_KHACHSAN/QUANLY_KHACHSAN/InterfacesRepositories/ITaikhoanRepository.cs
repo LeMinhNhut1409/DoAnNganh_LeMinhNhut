@@ -6,12 +6,19 @@ namespace QUANLY_KHACHSAN.InterfacesRepositories
 {
     public interface ITaikhoanRepository
     {
+        // Phương thức bất đồng bộ để lấy tài khoản theo tên đăng nhập và mật khẩu
         Task<Taikhoan> GetByUsernameAndPasswordAsync(string tentknv, string mktk);
-        Task AddAsync(Taikhoan taikhoan);
-        Task DeleteByManv(int manv);
-        Task UpdateByNv(int manv, string newEmail);
-        Task CreateAccountForAllEmployee(IEnumerable<Nhanvien> employeesWithoutAccounts);
-        // Các phương thức khác liên quan đến tài khoản có thể được thêm vào tùy theo yêu cầu.
 
+        // Phương thức bất đồng bộ để thêm một tài khoản mới
+        Task AddAsync(Taikhoan taikhoan);
+
+        // Phương thức bất đồng bộ để xóa tài khoản theo mã nhân viên
+        Task DeleteByManv(int manv);
+
+        // Phương thức bất đồng bộ để cập nhật email của tài khoản theo mã nhân viên
+        Task UpdateByNv(int manv, string newEmail);
+
+        // Phương thức bất đồng bộ để tạo tài khoản cho tất cả nhân viên không có tài khoản
+        Task CreateAccountForAllEmployee(IEnumerable<Nhanvien> employeesWithoutAccounts);
     }
 }

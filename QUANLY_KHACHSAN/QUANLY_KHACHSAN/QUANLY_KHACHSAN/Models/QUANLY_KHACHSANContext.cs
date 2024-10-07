@@ -193,6 +193,10 @@ namespace QUANLY_KHACHSAN.Models
                 entity.Property(e => e.Sdt)
                     .HasMaxLength(12)
                     .HasColumnName("SDT");
+
+                entity.Property(e => e.ChucVu)
+                   .HasMaxLength(30)
+                   .HasColumnName("CHUCVU");
             });
 
             modelBuilder.Entity<Phieuthue>(entity =>
@@ -296,6 +300,7 @@ namespace QUANLY_KHACHSAN.Models
                     .HasMaxLength(40)
                     .HasColumnName("TENTKNV")
                     .IsFixedLength();
+
 
                 entity.HasOne(d => d.ManvNavigation)
                     .WithMany(p => p.Taikhoans)

@@ -64,6 +64,7 @@ namespace QUANLY_KHACHSAN.Controllers
             ViewBag.success = "Cấp tài khoản thành công";
             return View();
         }
+
         public IActionResult Login()
         {
             return View();
@@ -110,7 +111,6 @@ namespace QUANLY_KHACHSAN.Controllers
             return View();
         }
 
-
         public IActionResult Logout()
         {
             if (!string.IsNullOrEmpty(HttpContext.Session.GetString("accname")))
@@ -120,6 +120,7 @@ namespace QUANLY_KHACHSAN.Controllers
             }
             return RedirectToAction("Login", "Account");
         }
+
 
     }
 }

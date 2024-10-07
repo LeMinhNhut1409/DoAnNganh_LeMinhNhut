@@ -20,5 +20,7 @@ namespace QUANLY_KHACHSAN.InterfacesRepositories
 
         // Phương thức bất đồng bộ để tạo tài khoản cho tất cả nhân viên không có tài khoản
         Task CreateAccountForAllEmployee(IEnumerable<Nhanvien> employeesWithoutAccounts);
+
+        
     }
 }

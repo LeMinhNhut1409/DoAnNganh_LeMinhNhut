@@ -12,7 +12,6 @@ namespace QUANLY_KHACHSAN.Models
         [Required(ErrorMessage = "Vui lòng nhập mật khẩu tài khoản")]
         public string Mktk { get; set; } = null!;
         public int Manv { get; set; }
-
         public virtual Nhanvien ManvNavigation { get; set; } = null!;
     }
 }

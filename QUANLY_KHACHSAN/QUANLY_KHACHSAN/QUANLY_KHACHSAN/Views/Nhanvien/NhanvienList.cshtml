@@ -48,6 +48,7 @@
             <th>Email</th>
             <th>Số điện thoại</th>
             <th>Địa chỉ</th>
+            <th>Chức vụ</th>
             <th>Tác vụ</th>
         </tr>
     </thead>
@@ -63,6 +64,7 @@
                 <td>@nhanvien.Email</td>
                 <td>@nhanvien.Sdt</td>
                 <td>@nhanvien.Diachi</td>
+                <td>@nhanvien.ChucVu</td>
                 <td>
                     <a asp-action="Update" asp-route-nhanvienid="@nhanvien.Manv" class="btn btn-info btn-sm rounded">Cập nhật</a>
                     <form asp-action="Delete" method="post" asp-route-nhanvienid="@nhanvien.Manv" class="d-inline">

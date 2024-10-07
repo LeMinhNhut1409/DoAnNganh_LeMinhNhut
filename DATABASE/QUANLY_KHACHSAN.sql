@@ -181,6 +181,19 @@ CREATE TABLE [dbo].[NHANVIEN](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO 
+-- Bước 1: Thêm cột CHUCVU
+ALTER TABLE [dbo].[NHANVIEN]
+ADD [CHUCVU] [nvarchar](50) NULL;
+
+-- Bước 2: Cập nhật giá trị mặc định
+UPDATE [dbo].[NHANVIEN]
+SET [CHUCVU] = 'Chưa xác định'
+WHERE [CHUCVU] IS NULL;
+
+-- Bước 3: Thay đổi cột thành NOT NULL
+ALTER TABLE [dbo].[NHANVIEN]
+ALTER COLUMN [CHUCVU] [nvarchar](50) NOT NULL;
+
 INSERT INTO [dbo].[NHANVIEN] (HOTEN, GIOITINH, NGAYSINH, SDT, EMAIL, DIACHI)
 VALUES (N'Lê Minh Nhựt', 'Nam', '2003-09-14', '0981298952', 'nhut.lm@gmail.com', N'497/6 Phan Văn Trị, P5, Gò Vấp'),
 		(N'Tống Thị Thu Hiền', 'Nữ', '2003-06-05', '098986456', 'hien.ttt@ou.edu.vn', N'52/1 Nguyễn Oanh, P17, Gò Vấp')

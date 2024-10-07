@@ -1,4 +1,5 @@
-﻿@model Nhanvien
+﻿@model QUANLY_KHACHSAN.Models.Nhanvien
+
 @{
     ViewData["Title"] = "Thêm nhân viên";
     Layout = "_ManagerLayout";
@@ -30,21 +31,21 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="Ngaysinh" class="font-weight-bold">Ngày sinh</label>
-                    <input type="datetime" asp-for="Ngaysinh" class="form-control" placeholder="DD/MM/YYYY" />
+                    <input type="date" asp-for="Ngaysinh" class="form-control" placeholder="DD/MM/YYYY" />
                     <span asp-validation-for="Ngaysinh" class="text-danger"></span>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="Sdt" class="font-weight-bold">Số điện thoại</label>
-                    <input type="number" asp-for="Sdt" class="form-control" placeholder="+84123456789" />
+                    <input type="tel" asp-for="Sdt" class="form-control" placeholder="+84123456789" />
                     <span asp-validation-for="Sdt" class="text-danger"></span>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="Email" class="font-weight-bold">Email</label>
-                    <input type="text" asp-for="Email" class="form-control" placeholder="abc@gmail.com" />
+                    <input type="email" asp-for="Email" class="form-control" placeholder="abc@gmail.com" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
             </div>
@@ -53,6 +54,20 @@
                     <label asp-for="Diachi" class="font-weight-bold">Địa chỉ</label>
                     <input type="text" asp-for="Diachi" class="form-control" />
                     <span asp-validation-for="Diachi" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ChucVu" class="font-weight-bold">Chức vụ</label>
+                    <select asp-for="ChucVu" class="form-control">
+                        <option value="">-- Chọn chức vụ --</option>
+                        <option value="Quản Lý">Quản Lý</option>
+                        <option value="Lễ Tân">Lễ Tân</option>
+                        <option value="Bảo vệ">Bảo Vệ</option>
+                        <option value="Nhà Bếp">Nhà Bếp</option>
+                        <option value="Tạp Vụ">Tạp Vụ</option>
+                    </select>
+                    <span asp-validation-for="ChucVu" class="text-danger"></span>
                 </div>
             </div>
         </div>

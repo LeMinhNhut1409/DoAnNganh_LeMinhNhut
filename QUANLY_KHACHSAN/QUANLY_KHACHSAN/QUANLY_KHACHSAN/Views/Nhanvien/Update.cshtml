@@ -55,6 +55,20 @@
                     <span asp-validation-for="Diachi" class="text-danger"></span>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="ChucVu" class="font-weight-bold">Chức vụ</label>
+                    <select asp-for="ChucVu" class="form-control">
+                        <option value="">-- Chọn chức vụ --</option>
+                        <option value="Quản Lý">Quản Lý</option>
+                        <option value="Lễ Tân">Lễ Tân</option>
+                        <option value="Bảo vệ">Bảo Vệ</option>
+                        <option value="Nhà Bếp">Nhà Bếp</option>
+                        <option value="Tạp Vụ">Tạp Vụ</option>
+                    </select>
+                    <span asp-validation-for="ChucVu" class="text-danger"></span>
+                </div>
+            </div>
         </div>
         <div class="row mt-4">
             <div class="col-md-6 d-flex justify-content-start">

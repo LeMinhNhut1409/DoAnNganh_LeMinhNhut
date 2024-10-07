@@ -115,14 +115,15 @@ namespace QUANLY_KHACHSAN.Controllers
 
                 return View(nhanvien);
             }
-            int id = int.Parse(nhanvienid);
-            var existingNhanvien = await nhanvienRepo.CheckEmailExist(nhanvien.Email, id);
+            //int id = int.Parse(nhanvienid);
+            //var existingNhanvien = await nhanvienRepo.CheckEmailExist(nhanvien.Email, id);
 
-            if (existingNhanvien != null)
-            {
-                ModelState.AddModelError("Email", "Email này đã được sử dụng");
-                return View(nhanvien);
-            }
+            //if (existingNhanvien != null)
+            //{
+            //    ModelState.AddModelError("Email", "Email này đã được sử dụng");
+            //    return View(nhanvien);
+            //}
+            int id = int.Parse(nhanvienid);
 
             await nhanvienRepo.UpdateAsync(nhanvien, id);
             return RedirectToAction("nhanvienList");

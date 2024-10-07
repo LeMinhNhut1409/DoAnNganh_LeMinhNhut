@@ -44,6 +44,7 @@ namespace QUANLY_KHACHSAN.Repositories
                     Sdt = nhanvien.Sdt,
                     Email = nhanvien.Email,
                     Diachi = nhanvien.Diachi,
+                    ChucVu = nhanvien.ChucVu
                 });
 
             return nhanviens;

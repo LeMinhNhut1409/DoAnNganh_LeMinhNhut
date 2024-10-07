@@ -30,6 +30,10 @@ namespace QUANLY_KHACHSAN.Models
         public string Email { get; set; } = null!;
         public string? Diachi { get; set; }
 
+        // Thêm thuộc tính ChucVu
+        [Required(ErrorMessage = "Chức vụ không thể thiếu")]
+        public string ChucVu { get; set; } = null!;// Lễ tân, bảo vệ, nhà bếp, tạp vụ
+
         public virtual ICollection<Hoadon> Hoadons { get; set; }
         public virtual ICollection<Phieuthue> Phieuthues { get; set; }
         public virtual ICollection<Taikhoan> Taikhoans { get; set; }

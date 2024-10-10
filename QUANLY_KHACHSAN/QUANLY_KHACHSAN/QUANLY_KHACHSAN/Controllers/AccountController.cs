@@ -81,6 +81,7 @@ namespace QUANLY_KHACHSAN.Controllers
                 var claims = new List<Claim>
                 {
                     new Claim("Role", check.Tentknv.Contains("@ou.edu.vn") ? "Staff" : "Manager")
+
                 };
 
                 var userIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -89,21 +90,46 @@ namespace QUANLY_KHACHSAN.Controllers
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
                 // Check the role and redirect accordingly
-                if (check.Tentknv.Contains("@ou.edu.vn"))
+                if (check.Tentknv.Contains("@gmail.com"))
+                {
+                    // Quản Lý role
+                    HttpContext.Session.SetString("accname", check.Tentknv);
+                    var name = HttpContext.Session.GetString("accname");
+                    ViewBag.accname = name;
+                    return RedirectToAction("Index", "Manager");
+                }
+                else if (check.Tentknv.Contains(".letan@ou.edu.vn"))
                 {
                     // Nhân viên role
                     HttpContext.Session.SetString("accname", check.Tentknv);
                     var name = HttpContext.Session.GetString("accname");
                     ViewBag.accname = name;
-                    return RedirectToAction("Index", "Staff");
+                    return RedirectToAction("Letan", "Staff");
                 }
-                else if (check.Tentknv.Contains("@gmail.com"))
+                else if (check.Tentknv.Contains(".baove@ou.edu.vn"))
                 {
-                    // Quản lí role
+                    // Nhân viên role
+
                     HttpContext.Session.SetString("accname", check.Tentknv);
                     var name = HttpContext.Session.GetString("accname");
                     ViewBag.accname = name;
-                    return RedirectToAction("Index", "Manager");
+                    return RedirectToAction("Baove", "Staff");
+                }
+                else if (check.Tentknv.Contains(".nhabep@ou.edu.vn"))
+                {
+                    // Nhân viên role
+                    HttpContext.Session.SetString("accname", check.Tentknv);
+                    var name = HttpContext.Session.GetString("accname");
+                    ViewBag.accname = name;
+                    return RedirectToAction("Nhabep", "Staff");
+                }
+                else if (check.Tentknv.Contains(".tapvu@ou.edu.vn"))
+                {
+                    // Nhân viên role
+                    HttpContext.Session.SetString("accname", check.Tentknv);
+                    var name = HttpContext.Session.GetString("accname");
+                    ViewBag.accname = name;
+                    return RedirectToAction("Tapvu", "Staff");
                 }
             }
 

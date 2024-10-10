@@ -41,6 +41,9 @@ builder.Services.AddScoped<ISaleReportRepository, SaleReportRepository>();
 builder.Services.AddScoped<IPhieuthueRepository, PhieuthueRepository>();
 builder.Services.AddScoped<IPhuthuRepository, PhuthuRepository>();
 builder.Services.AddScoped<IBillRepository, BillRepository>();
+builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
+builder.Services.AddScoped<IMonanRepository, MonanRepository>();
+builder.Services.AddScoped<ITapvuRepository, TapvuRepository>();
 // Add IHttpContextAccessor
 builder.Services.AddHttpContextAccessor();
 

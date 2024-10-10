@@ -11,6 +11,9 @@ namespace QUANLY_KHACHSAN.Models
             Hoadons = new HashSet<Hoadon>();
             Phieuthues = new HashSet<Phieuthue>();
             Taikhoans = new HashSet<Taikhoan>();
+            Baoves = new HashSet<Baove>();
+            Monans = new HashSet<Monan>();
+            Tapvus = new HashSet<Tapvu>();
         }
 
         public int Manv { get; set; }
@@ -32,10 +35,14 @@ namespace QUANLY_KHACHSAN.Models
 
         // Thêm thuộc tính ChucVu
         [Required(ErrorMessage = "Chức vụ không thể thiếu")]
-        public string ChucVu { get; set; } = null!;// Lễ tân, bảo vệ, nhà bếp, tạp vụ
+        public string Chucvu { get; set; } = null!;// Lễ tân, bảo vệ, nhà bếp, tạp vụ
 
         public virtual ICollection<Hoadon> Hoadons { get; set; }
         public virtual ICollection<Phieuthue> Phieuthues { get; set; }
         public virtual ICollection<Taikhoan> Taikhoans { get; set; }
+        public virtual ICollection<Baove> Baoves { get; set; }
+        public virtual ICollection<Monan> Monans { get; set; }
+        public virtual ICollection<Tapvu> Tapvus { get; set; }
+
     }
 }

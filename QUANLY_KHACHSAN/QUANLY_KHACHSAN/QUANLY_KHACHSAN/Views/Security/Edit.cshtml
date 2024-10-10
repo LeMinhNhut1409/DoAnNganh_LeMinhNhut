@@ -1,0 +1,54 @@
+﻿@model QUANLY_KHACHSAN.Models.Baove
+
+@{
+    ViewData["Title"] = "Thêm xe mới";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffBaoVeLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+<div class="text-center">
+    <h2 class="display-4" style="color:red;">THÊM XE MỚI</h2>
+</div>
+
+<div class="container mt-5">
+    <form asp-action="Edit" method="post">
+        <div class="form-group">
+            <label asp-for="Manv" class="control-label">Nhân viên bảo vệ</label>
+            <select asp-for="Manv" class="form-control" asp-items="@(new SelectList(ViewBag.NhanVienList, "Manv", "Hoten"))"></select>
+            <span asp-validation-for="Manv" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LicensePlate" class="font-weight-bold">Biển số</label>
+            <input type="text" asp-for="LicensePlate" class="form-control" placeholder="VD: 30E-123.45" required />
+            <span asp-validation-for="LicensePlate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CheckInDate" class="font-weight-bold">Ngày vào</label>
+            <input type="date" asp-for="CheckInDate" class="form-control" required />
+            <span asp-validation-for="CheckInDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CheckOutDate" class="font-weight-bold">Ngày ra</label>
+            <input type="date" asp-for="CheckOutDate" class="form-control" />
+            <span asp-validation-for="CheckOutDate" class="text-danger"></span>
+        </div>
+        <div class="form-group d-flex justify-content-between">
+            <a type="button" asp-action="VehicleList" asp-controller="Security" class="btn btn-warning">Danh sách xe</a>
+            <button type="submit" class="btn btn-primary right-aligned">Lưu</button>
+
+        </div>
+    </form>
+</div>

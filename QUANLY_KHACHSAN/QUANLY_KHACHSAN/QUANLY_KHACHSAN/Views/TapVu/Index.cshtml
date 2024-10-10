@@ -1,0 +1,192 @@
+﻿@using System.Diagnostics;
+@model QUANLY_KHACHSAN.ViewModels.PaginatedList<Tapvu>
+@{
+    ViewData["Title"] = "Danh sách vat dụng phòng cho thuê";
+    // Kiểm tra vai trò từ claims
+    var role = User.FindFirst("Role")?.Value;
+
+    // Đặt layout dựa trên vai trò
+    if (role == "Staff")
+    {
+        Layout = "_StaffTapVuLayout"; // Đặt layout cho nhân viên
+    }
+    else if (role == "Manager")
+    {
+        Layout = "_ManagerLayout"; // Đặt layout cho quản lý
+    }
+    else
+    {
+        Layout = "_DefaultLayout"; // Layout mặc định nếu không xác định được vai trò
+    }
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="path/to/font-awesome/css/all.min.css" />
+<style>
+    .table-bordered {
+        border: 2px solid black; /* Viền bảng màu đen */
+    }
+
+        .table-bordered th, .table-bordered td {
+            border: 1px solid black; /* Viền ô màu đen */
+            vertical-align: middle; /* Căn giữa chữ theo chiều dọc */
+            padding: 10px; /* Thêm khoảng cách cho ô */
+        }
+</style>
+<div class="text-center">
+    <h2 class="display-4" style="color:red;">QUẢN LÝ VẬT DỤNG PHÒNG CHO THUÊ</h2>
+</div>
+
+<table class="table table-striped table-bordered text-center">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                STT
+            </th>
+            <th>
+                Tên Phòng
+            </th>
+
+            <th>Dọn Dẹp</th>
+            <th>Thêm Đồ Dùng</th>
+            <th>
+                Số Lượng Khăn Sạch
+            </th>
+            <th>
+                Số Lượng Ga Giường Mới
+            </th>
+            <th>Số Lượng Dụng Cụ Vệ Sinh Cá Nhân Mới</th>
+            <th>Tác vụ</th>
+        </tr>
+    </thead>
+    <tbody >
+        @foreach (var tapvu in Model.Items)
+        {
+            <tr>
+                <td>
+                    @{
+                        int currentPageNumber = int.Parse(ViewData["CurrentPageNumber"].ToString());
+                        int index = Model.Items.IndexOf(tapvu) + 1;
+
+                        if ((currentPageNumber - 1) * 7 > 0)
+                        {
+                            index += (currentPageNumber - 1) * 7;
+                        }
+                    }
+                    @index
+                </td>
+                <td>@tapvu.MapNavigation.Tenphong</td>
+                
+                <td>@(tapvu.Dadondep ? "Đã dọn dẹp":"Chưa dọn dẹp")</td>
+                <td>@(tapvu.Dathemdodung ? "Đã thêm":"Chưa thêm")</td>
+                <td>@tapvu.Soluongkhan</td>
+                <td>@tapvu.Soluonggagiuong</td>
+                <td>@tapvu.Soluongdungcuvesinh</td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@tapvu.Matapvu" asp-route-roomid="@tapvu.Matapvu" class="btn btn-primary"  asp-route-manager="@ViewBag.Manager">Chỉnh sửa</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item @(Model.PageIndex == 1 ? "disabled" : "")">
+                    <a class="page-link text-black" asp-route-pageNumber="1"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-currentFilter2="@ViewData["CurrentFilter2"]">
+                        <span>Đầu</span>
+                    </a>
+                </li>
+                <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                    <a class="page-link text-black" asp-route-pageNumber="@(Model.PageIndex - 1)"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-currentFilter2="@ViewData["CurrentFilter2"]">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </li>
+
+                @if (Model.TotalPages <= 5)
+                {
+                    for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                            <a class="page-link text-black" asp-route-pageNumber="@i"
+                               asp-route-SortOrder="@ViewData["SortOrder"]"
+                               asp-route-sortColumn="@ViewData["sortColumn"]"
+                               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                               asp-route-currentFilter2="@ViewData["CurrentFilter2"]">@i</a>
+                        </li>
+                    }
+                }
+                else
+                {
+                    @if (Model.PageIndex <= 3)
+                    {
+                        for (int i = 1; i <= 5; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link text-black" asp-route-pageNumber="@i"
+                                   asp-route-SortOrder="@ViewData["SortOrder"]"
+                                   asp-route-sortColumn="@ViewData["sortColumn"]"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                   asp-route-currentFilter2="@ViewData["CurrentFilter2"]">@i</a>
+                            </li>
+                        }
+                    }
+                    else if (Model.PageIndex >= Model.TotalPages - 2)
+                    {
+                        for (int i = Model.TotalPages - 4; i <= Model.TotalPages; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link text-black" asp-route-pageNumber="@i"
+                                   asp-route-SortOrder="@ViewData["SortOrder"]"
+                                   asp-route-sortColumn="@ViewData["sortColumn"]"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                   asp-route-currentFilter2="@ViewData["CurrentFilter2"]">@i</a>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        for (int i = Model.PageIndex - 2; i <= Model.PageIndex + 2; i++)
+                        {
+                            <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                                <a class="page-link text-black" asp-route-pageNumber="@i"
+                                   asp-route-SortOrder="@ViewData["SortOrder"]"
+                                   asp-route-sortColumn="@ViewData["sortColumn"]"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                   asp-route-currentFilter2="@ViewData["CurrentFilter2"]">@i</a>
+                            </li>
+                        }
+                    }
+                }
+
+                <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                    <a class="page-link text-black" asp-route-pageNumber="@(Model.PageIndex + 1)"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-currentFilter2="@ViewData["CurrentFilter2"]">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+                <li class="page-item @(Model.PageIndex == Model.TotalPages ? "disabled" : "")">
+                    <a class="page-link text-black" asp-route-pageNumber="@Model.TotalPages"
+                       asp-route-SortOrder="@ViewData["SortOrder"]"
+                       asp-route-sortColumn="@ViewData["sortColumn"]"
+                       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                       asp-route-currentFilter2="@ViewData["CurrentFilter2"]">
+                        <span>Cuối</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+

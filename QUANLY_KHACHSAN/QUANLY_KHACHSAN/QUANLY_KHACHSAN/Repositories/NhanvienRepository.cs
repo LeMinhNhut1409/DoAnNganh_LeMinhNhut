@@ -31,7 +31,10 @@ namespace QUANLY_KHACHSAN.Repositories
             _dbContext.Nhanviens.Remove(nhanvien);
             await _dbContext.SaveChangesAsync();
         }
-
+        public async Task<bool> NhanvienExists(int id)
+        {
+            return await _dbContext.Nhanviens.AnyAsync(b => b.Manv == id);
+        }
         public async Task<IQueryable<Nhanvien>> GetAllAsync()
         {
             var nhanviens = _dbContext.Nhanviens
@@ -44,7 +47,7 @@ namespace QUANLY_KHACHSAN.Repositories
                     Sdt = nhanvien.Sdt,
                     Email = nhanvien.Email,
                     Diachi = nhanvien.Diachi,
-                    ChucVu = nhanvien.ChucVu
+                    Chucvu = nhanvien.Chucvu
                 });
 
             return nhanviens;
@@ -55,6 +58,7 @@ namespace QUANLY_KHACHSAN.Repositories
             var nhanvien = await _dbContext.Nhanviens.FindAsync(id);
             return nhanvien;
         }
+
         public async Task UpdateAsync(Nhanvien nhanvienUpdate, int nhanvienid)
         {
             await _tkrepo.UpdateByNv(nhanvienid, nhanvienUpdate.Email);
@@ -122,6 +126,16 @@ namespace QUANLY_KHACHSAN.Repositories
 
             return nhanviens;
         }
+        public async Task<List<string>> GetDistinctEmAsync()
+        {
+            return await _dbContext.Nhanviens.Select(r => r.Hoten).Distinct().ToListAsync();
+        }
+        public async Task<int?> GetManvByEmailAsync(string email)
+        {
+            var nhanvien = await _dbContext.Nhanviens.FirstOrDefaultAsync(n => n.Email == email);
+            return nhanvien?.Manv; // Trả về mã nhân viên nếu tồn tại
+        }
+
     }
 }
 

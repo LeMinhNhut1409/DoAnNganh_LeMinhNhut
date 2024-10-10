@@ -1,29 +1,129 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\QUANLY_KHACHSAN\\",
+  "WorkspaceRootPath": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\quanly_khachsan\\quanly_khachsan\\models\\quanly_khachsancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\controllers\\monancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\controllers\\monancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\controllers\\rentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\controllers\\rentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\interfacesrepositories\\imonanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\interfacesrepositories\\imonanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\repositories\\monanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\repositories\\monanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\interfacesrepositories\\inhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\interfacesrepositories\\inhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\repositories\\phongrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\repositories\\phongrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\repositories\\nhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\repositories\\nhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\repositories\\loaiphongrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\repositories\\loaiphongrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\models\\quanly_khachsancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\models\\quanly_khachsancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\quanly_khachsan\\quanly_khachsan\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\views\\tapvu\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\views\\tapvu\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\views\\tapvu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\views\\tapvu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\views\\nhanvien\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\views\\nhanvien\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\views\\nhanvien\\nhanvienlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\views\\nhanvien\\nhanvienlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\views\\nhanvien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\views\\nhanvien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\views\\monan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\views\\monan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\views\\monan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\views\\monan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\views\\monan\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\views\\monan\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\views\\monan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\views\\monan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\repositories\\tapvurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\repositories\\tapvurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\controllers\\tapvucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\controllers\\tapvucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\models\\tapvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\models\\tapvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\quanly_khachsan\\quanly_khachsan\\models\\phieuthue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\models\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\models\\monan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\quanly_khachsan.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\models\\phieuthue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\models\\phieuthue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\quanly_khachsan\\quanly_khachsan\\models\\loaikhach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\models\\loaikhach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\models\\loaikhach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\quanly_khachsan\\quanly_khachsan\\models\\loaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\models\\loaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\models\\loaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\quanly_khachsan\\quanly_khachsan\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|d:\\qlks_demo-main\\quanly_khachsan\\quanly_khachsan\\quanly_khachsan\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85AFD01E-577A-45EA-A159-C4A03B7B34DF}|QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj|solutionrelative:quanly_khachsan\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,85 +134,422 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1283,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RentController.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Controllers\\RentController.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Controllers\\RentController.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Controllers\\RentController.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Controllers\\RentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T10:10:39.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMonanRepository.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\InterfacesRepositories\\IMonanRepository.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\InterfacesRepositories\\IMonanRepository.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\InterfacesRepositories\\IMonanRepository.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\InterfacesRepositories\\IMonanRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA5wBAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T10:07:17.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoaiphongRepository.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\LoaiphongRepository.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Repositories\\LoaiphongRepository.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\LoaiphongRepository.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Repositories\\LoaiphongRepository.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAswEoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T10:04:16.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MonanRepository.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\MonanRepository.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Repositories\\MonanRepository.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\MonanRepository.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Repositories\\MonanRepository.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAA7wC8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:55:03.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MonanController.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Controllers\\MonanController.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Controllers\\MonanController.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Controllers\\MonanController.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Controllers\\MonanController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:52:09.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Program.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Program.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Program.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:50:03.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\TapVu\\Update.cshtml",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Views\\TapVu\\Update.cshtml",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\TapVu\\Update.cshtml",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Views\\TapVu\\Update.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADwAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T09:47:53.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Controllers\\RoomController.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Controllers\\RoomController.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAGkAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:54:52.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "INhanvienRepository.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\InterfacesRepositories\\INhanvienRepository.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\InterfacesRepositories\\INhanvienRepository.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\InterfacesRepositories\\INhanvienRepository.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\InterfacesRepositories\\INhanvienRepository.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAIwCgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T10:05:37.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PhongRepository.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\PhongRepository.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Repositories\\PhongRepository.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\PhongRepository.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Repositories\\PhongRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:55:11.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\appsettings.json",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\appsettings.json",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\appsettings.json",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAD1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-10T09:50:04.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NhanvienRepository.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\NhanvienRepository.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Repositories\\NhanvienRepository.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\NhanvienRepository.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Repositories\\NhanvienRepository.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAADwv4AAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:43:59.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\TapVu\\Index.cshtml",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Views\\TapVu\\Index.cshtml",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\TapVu\\Index.cshtml",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Views\\TapVu\\Index.cshtml",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAE0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T09:47:10.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\Nhanvien\\Update.cshtml",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Views\\Nhanvien\\Update.cshtml",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\Nhanvien\\Update.cshtml",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Views\\Nhanvien\\Update.cshtml",
+              "ViewState": "AQIAACUAAAAAAAAAAAAiwEUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T09:46:41.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NhanvienList.cshtml",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\Nhanvien\\NhanvienList.cshtml",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Views\\Nhanvien\\NhanvienList.cshtml",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\Nhanvien\\NhanvienList.cshtml",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Views\\Nhanvien\\NhanvienList.cshtml",
+              "ViewState": "AQIAADIAAAAAAAAAAAAiwEIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T09:46:31.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\Nhanvien\\Create.cshtml",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Views\\Nhanvien\\Create.cshtml",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\Nhanvien\\Create.cshtml",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Views\\Nhanvien\\Create.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAiwEUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T09:46:16.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QUANLY_KHACHSANContext.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\QUANLY_KHACHSANContext.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\QUANLY_KHACHSANContext.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\QUANLY_KHACHSANContext.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\QUANLY_KHACHSANContext.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAuwCQAAADPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T07:02:47.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\MonAn\\Index.cshtml",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Views\\MonAn\\Index.cshtml",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\MonAn\\Index.cshtml",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Views\\MonAn\\Index.cshtml",
+              "ViewState": "AQIAADoAAAAAAAAAAAAiwEoAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T09:46:07.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\MonAn\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Views\\MonAn\\Edit.cshtml",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\MonAn\\Edit.cshtml",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Views\\MonAn\\Edit.cshtml",
+              "ViewState": "AQIAACMAAAAAAAAAAAAiwDUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T09:45:40.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\MonAn\\Delete.cshtml",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Views\\MonAn\\Delete.cshtml",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\MonAn\\Delete.cshtml",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Views\\MonAn\\Delete.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAiwCAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T09:45:32.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\MonAn\\Create.cshtml",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Views\\MonAn\\Create.cshtml",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Views\\MonAn\\Create.cshtml",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Views\\MonAn\\Create.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAiwB8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T09:45:17.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TapvuRepository.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\TapvuRepository.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Repositories\\TapvuRepository.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Repositories\\TapvuRepository.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Repositories\\TapvuRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:44:17.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TapvuController.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Controllers\\TapvuController.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Controllers\\TapvuController.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Controllers\\TapvuController.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Controllers\\TapvuController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAADUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:42:26.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Tapvu.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Tapvu.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Tapvu.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Tapvu.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Tapvu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:40:24.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Nhanvien.cs",
-              "DocumentMoniker": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Nhanvien.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Nhanvien.cs",
               "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Nhanvien.cs",
-              "ToolTip": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Nhanvien.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Nhanvien.cs",
               "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Nhanvien.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowAAAAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwCUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T07:03:38.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Phieuthue.cs",
-              "DocumentMoniker": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Phieuthue.cs",
-              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Phieuthue.cs",
-              "ToolTip": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Phieuthue.cs",
-              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Phieuthue.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 25,
+              "Title": "Monan.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Monan.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Monan.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Monan.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Monan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T07:03:35.535Z",
+              "WhenOpened": "2024-10-10T09:39:29.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Loaikhach.cs",
-              "DocumentMoniker": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Loaikhach.cs",
-              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Loaikhach.cs",
-              "ToolTip": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Loaikhach.cs",
-              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Loaikhach.cs",
+              "DocumentIndex": 26,
+              "Title": "QUANLY_KHACHSAN",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\QUANLY_KHACHSAN.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T07:03:33.717Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-10T09:38:19.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Loaiphong.cs",
-              "DocumentMoniker": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Loaiphong.cs",
-              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Loaiphong.cs",
-              "ToolTip": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Loaiphong.cs",
-              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Loaiphong.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T07:03:31.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 30,
               "Title": "Khachhang.cs",
-              "DocumentMoniker": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Khachhang.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Khachhang.cs",
               "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Khachhang.cs",
-              "ToolTip": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Khachhang.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Khachhang.cs",
               "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Khachhang.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAA1wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T07:03:27.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T07:03:27.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QUANLY_KHACHSANContext.cs",
-              "DocumentMoniker": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\QUANLY_KHACHSANContext.cs",
-              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\QUANLY_KHACHSANContext.cs",
-              "ToolTip": "D:\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\QUANLY_KHACHSANContext.cs",
-              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\QUANLY_KHACHSANContext.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA5wCEAAAA1AAAA",
+              "DocumentIndex": 29,
+              "Title": "Loaiphong.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Loaiphong.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Loaiphong.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Loaiphong.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Loaiphong.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T07:02:47.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T07:03:31.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Loaikhach.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Loaikhach.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Loaikhach.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Loaikhach.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Loaikhach.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T07:03:33.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Phieuthue.cs",
+              "DocumentMoniker": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Phieuthue.cs",
+              "RelativeDocumentMoniker": "QUANLY_KHACHSAN\\Models\\Phieuthue.cs",
+              "ToolTip": "D:\\QLKS_demo-main\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\QUANLY_KHACHSAN\\Models\\Phieuthue.cs",
+              "RelativeToolTip": "QUANLY_KHACHSAN\\Models\\Phieuthue.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T07:03:35.535Z"
             }
           ]
         }

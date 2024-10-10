@@ -92,6 +92,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/MonAn/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW9uQW4vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/MonAn/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW9uQW4vRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/MonAn/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW9uQW4vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/MonAn/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW9uQW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Nhanvien/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmhhbnZpZW4vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -148,6 +164,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2FsZVJlcG9ydC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Security/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Security/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Security/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Security/VehicleList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VjdXJpdHkvVmVoaWNsZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/SettingLoaiKhach/ClientType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2V0dGluZ0xvYWlLaGFjaC9DbGllbnRUeXBlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -168,16 +200,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19NYW5hZ2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_StaffLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TdGFmZkxheW91dC5jc2h0bWw=
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_StaffBaoVeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TdGFmZkJhb1ZlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_StaffLeTanLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TdGFmZkxlVGFuTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_StaffNhaBepLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TdGFmZk5oYUJlcExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_StaffTapVuLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TdGFmZlRhcFZ1TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Staff/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhZmYvSW5kZXguY3NodG1s
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Staff/Baove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhZmYvQmFvdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Staff/Letan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhZmYvTGV0YW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Staff/Nhabep.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhZmYvTmhhYmVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/Staff/Tapvu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhZmYvVGFwdnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/TapVu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFwVnUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/TapVu/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFwVnUvVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/minhnhut/Documents/GitHub/DoAnNganh_LeMinhNhut/QUANLY_KHACHSAN/QUANLY_KHACHSAN/QUANLY_KHACHSAN/Views/_ViewImports.cshtml]

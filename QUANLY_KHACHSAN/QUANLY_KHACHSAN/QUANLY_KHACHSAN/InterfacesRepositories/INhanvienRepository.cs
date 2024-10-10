@@ -37,5 +37,8 @@ namespace QUANLY_KHACHSAN.Repositories
         // Phương thức bất đồng bộ để kiểm tra sự tồn tại của email, trả về nhân viên nếu có
         Task<Nhanvien> CheckEmailExist(string email, int nhanvienid);
 
+        Task<bool> NhanvienExists(int id);
+        Task<List<string>> GetDistinctEmAsync();
+        Task<int?> GetManvByEmailAsync(string email);
     }
 }

@@ -2,12 +2,13 @@
 
 @{
     ViewData["Title"] = "Chỉnh sửa phiếu thuê";
+    // Kiểm tra vai trò từ claims
     var role = User.FindFirst("Role")?.Value;
 
     // Đặt layout dựa trên vai trò
     if (role == "Staff")
     {
-        Layout = "_StaffLayout"; // Đặt layout cho nhân viên
+        Layout = "_StaffLeTanLayout"; // Đặt layout cho nhân viên
     }
     else if (role == "Manager")
     {

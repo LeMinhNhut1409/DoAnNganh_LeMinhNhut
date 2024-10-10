@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +17,7 @@
         }
 
         footer {
-            background-color: #F1DC5F; /* Màu nền tối */
+            background-color: #00EE00; /* Màu nền tối */
             color: black; /* Màu chữ sáng */
             padding: 40px 20px; /* Padding cho footer */
             display: flex; /* Sử dụng Flexbox */
@@ -59,7 +60,7 @@
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0" style="background: #987010;">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0" style="background: #008800;">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
                     <strong>
                         <a href="#" id="menuToggle" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none" style="color: gold;">
@@ -70,43 +71,33 @@
                         <!-- Manager menu items -->
                         <li class="nav-item">
                             <strong>
-                                <a asp-controller="Staff" asp-action="Index" class="nav-link align-middle px-0 text-white">
+                                <a asp-controller="Staff" asp-action="Nhabep" class="nav-link align-middle px-0 text-white">
                                     <i class="bi bi-house-fill"></i><span class="ms-1 d-none d-sm-inline">Trang chủ</span>
                                 </a>
                             </strong>
                         </li>
                         <li>
                             <strong>
-                                <a asp-controller="Client" asp-action="ClientList" class="nav-link px-0 align-middle text-white">
-                                    <i class="bi bi-person-circle"></i><span class="ms-1 d-none d-sm-inline">Khách Hàng</span>
+                                <a asp-controller="MonAn" asp-action="Index" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-person-circle"></i><span class="ms-1 d-none d-sm-inline">Quản lý món ăn</span>
                                 </a>
                             </strong>
                         </li>
 
                         <li>
                             <strong>
-                                <a asp-controller="Room" asp-action="RoomList" class="nav-link px-0 align-middle text-white">
-                                    <i class="bi bi-building"></i><span class="ms-1 d-none d-sm-inline">Phòng</span>
+                                <a asp-controller="Staff" asp-action="Nhabep" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-building"></i><span class="ms-1 d-none d-sm-inline">Quản lý nguyên liệu</span>
                                 </a>
                             </strong>
                         </li>
-
                         <li>
                             <strong>
-                                <a asp-controller="Rent" asp-action="Index" class="nav-link px-0 align-middle text-white">
-                                    <i class="bi bi-card-list"></i><span class="ms-1 d-none d-sm-inline">Phiếu thuê</span>
+                                <a asp-controller="Staff" asp-action="Nhabep" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-building"></i><span class="ms-1 d-none d-sm-inline">Quản lý dụng cụ nhà bếp</span>
                                 </a>
                             </strong>
                         </li>
-
-                        <li>
-                            <strong>
-                                <a asp-controller="Bill" asp-action="Index" class="nav-link px-0 align-middle text-white">
-                                    <i class="bi bi-receipt"></i><span class="ms-1 d-none d-sm-inline">Hóa Đơn</span>
-                                </a>
-                            </strong>
-                        </li>
-
                     </ul>
                     <hr>
                     <hr />
@@ -121,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col py-3" style="background: #F7F5AF; ">
+            <div class="col py-3" style="background: #99FF66; ">
                 @RenderBody()
 
             </div>
@@ -145,7 +136,7 @@
         <div class="social-icons">
             <a href="https://www.facebook.com/cauut.hole.10004/" target="_blank">Facebook</a>
             <a href="#" target="_blank">Instagram</a>
-          
+
         </div>
     </div>
     <div class="footer-section">
@@ -160,7 +151,4 @@
 <div class="footer-bottom">
     <p>&copy; 2024 Minh Nhựt Hotel. Bảo lưu mọi quyền.</p>
 </div>
-
 </html>
-
-

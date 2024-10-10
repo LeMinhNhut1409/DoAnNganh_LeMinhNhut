@@ -39,6 +39,9 @@
     <None Remove="Views\Phuthu\" />
     <None Remove="Views\Bill\" />
     <None Remove="Views\SaleReport\" />
+    <None Remove="Views\Security\" />
+    <None Remove="Views\MonAn\" />
+    <None Remove="Views\TapVu\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />
@@ -58,5 +61,8 @@
     <Folder Include="Views\Phuthu\" />
     <Folder Include="Views\Bill\" />
     <Folder Include="Views\SaleReport\" />
+    <Folder Include="Views\Security\" />
+    <Folder Include="Views\MonAn\" />
+    <Folder Include="Views\TapVu\" />
   </ItemGroup>
 </Project>

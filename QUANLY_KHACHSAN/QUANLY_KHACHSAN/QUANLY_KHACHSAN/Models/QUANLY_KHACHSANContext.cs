@@ -16,15 +16,18 @@ namespace QUANLY_KHACHSAN.Models
         {
         }
 
+        public virtual DbSet<Baove> Baoves { get; set; } = null!;
         public virtual DbSet<Hoadon> Hoadons { get; set; } = null!;
         public virtual DbSet<Khachhang> Khachhangs { get; set; } = null!;
         public virtual DbSet<Loaikhach> Loaikhaches { get; set; } = null!;
         public virtual DbSet<Loaiphong> Loaiphongs { get; set; } = null!;
+        public virtual DbSet<Monan> Monans { get; set; } = null!;
         public virtual DbSet<Nhanvien> Nhanviens { get; set; } = null!;
         public virtual DbSet<Phieuthue> Phieuthues { get; set; } = null!;
         public virtual DbSet<Phong> Phongs { get; set; } = null!;
         public virtual DbSet<Phuthu> Phuthus { get; set; } = null!;
         public virtual DbSet<Taikhoan> Taikhoans { get; set; } = null!;
+        public virtual DbSet<Tapvu> Tapvus { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -37,6 +40,31 @@ namespace QUANLY_KHACHSAN.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Baove>(entity =>
+            {
+                entity.HasKey(e => e.Mabv);
+
+                entity.ToTable("BAOVE");
+
+                entity.Property(e => e.Mabv).HasColumnName("MABV");
+
+                entity.Property(e => e.CheckInDate).HasColumnType("datetime");
+
+                entity.Property(e => e.CheckOutDate).HasColumnType("datetime");
+
+                entity.Property(e => e.LicensePlate)
+                    .HasMaxLength(40)
+                    .IsFixedLength();
+
+                entity.Property(e => e.Manv).HasColumnName("MANV");
+
+                entity.HasOne(d => d.ManvNavigation)
+                    .WithMany(p => p.Baoves)
+                    .HasForeignKey(d => d.Manv)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_BAOVE_NHANVIEN");
+            });
+
             modelBuilder.Entity<Hoadon>(entity =>
             {
                 entity.HasKey(e => e.Mahd);
@@ -161,6 +189,38 @@ namespace QUANLY_KHACHSAN.Models
                     .HasColumnName("TENLOAI");
             });
 
+            modelBuilder.Entity<Monan>(entity =>
+            {
+                entity.HasKey(e => e.Mamonan);
+
+                entity.ToTable("MONAN");
+
+                entity.Property(e => e.Mamonan).HasColumnName("MAMONAN");
+
+                entity.Property(e => e.Gia)
+                    .HasColumnType("decimal(18, 2)")
+                    .HasColumnName("GIA");
+
+                entity.Property(e => e.Manv).HasColumnName("MANV");
+
+                entity.Property(e => e.Mota)
+                    .HasMaxLength(255)
+                    .HasColumnName("MOTA");
+
+                entity.Property(e => e.Tenmon)
+                    .HasMaxLength(100)
+                    .HasColumnName("TENMON");
+
+                entity.Property(e => e.Thoigianchebien).HasColumnName("THOIGIANCHEBIEN");
+
+                entity.HasOne(d => d.ManvNavigation)
+                    .WithMany(p => p.Monans)
+                    .HasForeignKey(d => d.Manv)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_MONAN_NHANVIEN");
+
+            });
+
             modelBuilder.Entity<Nhanvien>(entity =>
             {
                 entity.HasKey(e => e.Manv);
@@ -168,6 +228,10 @@ namespace QUANLY_KHACHSAN.Models
                 entity.ToTable("NHANVIEN");
 
                 entity.Property(e => e.Manv).HasColumnName("MANV");
+
+                entity.Property(e => e.Chucvu)
+                    .HasMaxLength(50)
+                    .HasColumnName("CHUCVU");
 
                 entity.Property(e => e.Diachi)
                     .HasMaxLength(100)
@@ -193,10 +257,6 @@ namespace QUANLY_KHACHSAN.Models
                 entity.Property(e => e.Sdt)
                     .HasMaxLength(12)
                     .HasColumnName("SDT");
-
-                entity.Property(e => e.ChucVu)
-                   .HasMaxLength(30)
-                   .HasColumnName("CHUCVU");
             });
 
             modelBuilder.Entity<Phieuthue>(entity =>
@@ -301,7 +361,6 @@ namespace QUANLY_KHACHSAN.Models
                     .HasColumnName("TENTKNV")
                     .IsFixedLength();
 
-
                 entity.HasOne(d => d.ManvNavigation)
                     .WithMany(p => p.Taikhoans)
                     .HasForeignKey(d => d.Manv)
@@ -309,6 +368,40 @@ namespace QUANLY_KHACHSAN.Models
                     .HasConstraintName("FK_TAIKHOAN_NHANVIEN");
             });
 
+            modelBuilder.Entity<Tapvu>(entity =>
+            {
+                entity.HasKey(e => e.Matapvu);
+
+                entity.ToTable("TAPVU");
+
+                entity.Property(e => e.Matapvu).HasColumnName("MATAPVU");
+
+                entity.Property(e => e.Dadondep).HasColumnName("DADONDEP");
+
+                entity.Property(e => e.Dathemdodung).HasColumnName("DATHEMDODUNG");
+
+                entity.Property(e => e.Manv).HasColumnName("MANV");
+
+                entity.Property(e => e.Map).HasColumnName("MAP");
+
+                entity.Property(e => e.Soluongdungcuvesinh).HasColumnName("SOLUONGDUNGCUVESINH");
+
+                entity.Property(e => e.Soluonggagiuong).HasColumnName("SOLUONGGAGIUONG");
+
+                entity.Property(e => e.Soluongkhan).HasColumnName("SOLUONGKHAN");
+
+                entity.HasOne(d => d.ManvNavigation)
+                    .WithMany(p => p.Tapvus)
+                    .HasForeignKey(d => d.Manv)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_TAPVU_NHANVIEN");
+
+                entity.HasOne(d => d.MapNavigation)
+                    .WithMany(p => p.Tapvus)
+                    .HasForeignKey(d => d.Map)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_TAPVU_PHONG");
+            });
             OnModelCreatingPartial(modelBuilder);
         }
 

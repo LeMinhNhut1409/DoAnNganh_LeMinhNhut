@@ -9,6 +9,7 @@ namespace QUANLY_KHACHSAN.Models
         {
             Khachhangs = new HashSet<Khachhang>();
             Phieuthues = new HashSet<Phieuthue>();
+            Tapvus = new HashSet<Tapvu>();
         }
 
         public int Map { get; set; }
@@ -21,5 +22,6 @@ namespace QUANLY_KHACHSAN.Models
         public virtual Loaiphong MaloaiphongNavigation { get; set; } = null!;
         public virtual ICollection<Khachhang> Khachhangs { get; set; }
         public virtual ICollection<Phieuthue> Phieuthues { get; set; }
+        public virtual ICollection<Tapvu> Tapvus { get; set; }
     }
 }

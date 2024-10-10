@@ -1,0 +1,108 @@
+﻿@model Tapvu
+
+@{
+    ViewData["Title"] = "Chỉnh sửa Tạp vụ";
+    var role = User.FindFirst("Role")?.Value;
+
+    Layout = role switch
+    {
+        "Staff" => "_StaffTapVuLayout",
+        "Manager" => "_ManagerLayout",
+        _ => "_DefaultLayout"
+    };
+}
+<style>
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-column {
+        flex: 1; /* Cho phép các cột có cùng chiều rộng */
+        margin-right: 10px; /* Khoảng cách giữa các cột */
+    }
+
+        .form-column:last-child {
+            margin-right: 0; /* Không có khoảng cách cho cột cuối cùng */
+        }
+</style>
+<div class="text-center">
+    <h2 class="display-4" style="color:red;">CẬP NHẬT THÔNG TIN TẠP VỤ</h2>
+</div>
+
+<div class="container mt-5">
+    <form asp-action="Update" method="post">
+        <input type="hidden" asp-for="Matapvu" />
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Manv" class="control-label">Nhân Viên Tạp Vụ</label>
+                <select asp-for="Manv" class="form-control" asp-items="@(new SelectList(ViewBag.NhanVienList, "Manv", "Hoten"))"></select>
+                <span asp-validation-for="Manv" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Map" class="control-label">Tên Phòng</label>
+                <select asp-for="Map" class="form-control" asp-items="@(new SelectList(ViewBag.PhongList, "Map", "Tenphong"))"></select>
+                <span asp-validation-for="Map" class="text-danger"></span>
+            </div>
+            <div class="form-group form-row">
+                <div class="form-column">
+                    <label class="font-weight-bold">Dọn Dẹp</label>
+                    <div>
+                        <input type="radio" asp-for="Dadondep" value="true" id="dadondep-true" />
+                        <label for="dadondep-true">Đã dọn dẹp</label>
+                    </div>
+                    <div>
+                        <input type="radio" asp-for="Dadondep" value="false" id="dadondep-false" />
+                        <label for="dadondep-false">Chưa dọn dẹp</label>
+                    </div>
+                </div>
+
+                <div class="form-column">
+                    <label class="font-weight-bold">Thêm Đồ Dùng</label>
+                    <div>
+                        <input type="radio" asp-for="Dathemdodung" value="true" id="dathemdodung-true" />
+                        <label for="dathemdodung-true">Đã thêm</label>
+                    </div>
+                    <div>
+                        <input type="radio" asp-for="Dathemdodung" value="false" id="dathemdodung-false" />
+                        <label for="dathemdodung-false">Chưa thêm</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold" asp-for="Soluongkhan">Số Lượng Khăn Sạch</label>
+                <input asp-for="Soluongkhan" type="number" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold" asp-for="Soluonggagiuong">Số Lượng Ga Giường Sạch</label>
+                <input asp-for="Soluonggagiuong" type="number" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold" asp-for="Soluongdungcuvesinh">Số Lượng Dụng Cụ Vệ Sinh Cá Nhân Mới</label>
+                <input asp-for="Soluongdungcuvesinh" type="number" class="form-control" />
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6 d-flex justify-content-start">
+                    <a asp-action="Index" class="btn btn-warning btn-block">Xem danh sách</a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary btn-block" asp-route-tapvuid="@Model.Matapvu">Cập nhật</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+@if (!ViewData.ModelState.IsValid)
+{
+    <div style="color:red;">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}

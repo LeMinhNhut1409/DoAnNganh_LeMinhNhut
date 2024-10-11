@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using iText.Kernel.Pdf;
+using iText.Layout.Element;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +12,10 @@ using QUANLY_KHACHSAN.InterfacesRepositories;
 using QUANLY_KHACHSAN.Models;
 using QUANLY_KHACHSAN.Repositories;
 using QUANLY_KHACHSAN.ViewModels;
-
+using OfficeOpenXml; // Để xuất Excel
+using iText.Kernel.Pdf; // Để xuất PDF
+using iText.Layout; // Để xuất PDF
+using iText.Layout.Element; // Để xuất PDF
 
 namespace QUANLY_KHACHSAN.Controllers
 {
@@ -134,6 +139,7 @@ namespace QUANLY_KHACHSAN.Controllers
             {
                 hoadon.IdphuThu = phuthu.Idphuthu; // Giả sử Id là ID của phụ thu
                 hoadon.Tylephuthu = (double)phuthu.Giatriphuthu; // Lưu tỷ lệ phụ thu
+
             }
 
             await _billRepository.CreateBill(hoadon);
@@ -229,6 +235,45 @@ namespace QUANLY_KHACHSAN.Controllers
             int id = client.Makh;
             return RedirectToAction("Test", new { id = id });
         }
+        // Xuất PDF Chi Tiết Hóa Đơn
+        public async Task<IActionResult> ExportBillToPdf(int id)
+        {
+            // Kiểm tra xem hóa đơn có tồn tại không
+            if (!await _billRepository.BillExists(id))
+            {
+                return NotFound();
+            }
 
+            var bill = await _billRepository.GetBillById(id);
+            if (bill == null)
+            {
+                return NotFound();
+            }
+
+            using (var stream = new MemoryStream())
+            {
+                var writer = new PdfWriter(stream);
+                var pdf = new PdfDocument(writer);
+                var document = new Document(pdf);
+
+                // Thêm tiêu đề
+                document.Add(new Paragraph($"Chi Tiết Hóa Đơn - Mã HĐ: {bill.Mahd}").SetFontSize(20).SetBold());
+
+                // Thêm thông tin khách hàng
+                document.Add(new Paragraph($"Khách Hàng: {bill.Tenkh}"));
+                document.Add(new Paragraph($"CCCD: {bill.Cccd}"));
+                document.Add(new Paragraph($"Phòng: {bill.Tenphong}"));
+                document.Add(new Paragraph($"Ngày Đặt: {bill.Ngaydat.ToString("dd/MM/yyyy")}"));
+                document.Add(new Paragraph($"Ngày Lập Hóa Đơn: {bill.Ngaylaphd.ToString("dd/MM/yyyy")}"));
+                document.Add(new Paragraph($"Số Ngày Ở: {bill.Songayo}"));
+                document.Add(new Paragraph($"Tổng Tiền: {bill.Tongtien:C}")); // Định dạng tiền tệ
+                document.Add(new Paragraph($"Phụ Thu: {bill.Tylephuthu}%"));
+
+                document.Close(); // Đóng tài liệu
+
+                var fileContent = stream.ToArray();
+                return File(fileContent, "application/pdf", $"Bill_{bill.Mahd}.pdf");
+            }
+        }
     }
 }

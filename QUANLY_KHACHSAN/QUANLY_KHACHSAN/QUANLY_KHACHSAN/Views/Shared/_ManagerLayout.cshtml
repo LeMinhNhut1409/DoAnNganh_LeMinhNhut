@@ -83,7 +83,7 @@
                                 </a>
                             </strong>
                         </li>
-                        
+
                         <li>
                             <strong>
                                 <a asp-controller="Room" asp-action="RoomList" asp-route-manager="1" class="nav-link px-0 align-middle text-white">
@@ -91,16 +91,42 @@
                                 </a>
                             </strong>
                         </li>
-
-                        
-
                         <li>
                             <strong>
                                 <a href="#submenu5" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
-                                    <i class="bi bi-flag"></i><span class="ms-1 d-none d-sm-inline">Báo cáo</span>
+                                    <i class="bi bi-cash-coin"></i><span class="ms-1 d-none d-sm-inline">Chi tiêu</span>
                                 </a>
                             </strong>
                             <ul class="collapse nav flex-column ms-1" id="submenu5" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a asp-controller="Manager" asp-action="Index" asp-route-manager="1" class="nav-link px-0 align-middle text-white">
+                                        <i class="bi bi-coin"></i><span class="ms-1 d-none d-sm-inline">Chi tiêu lương nhân viên</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Manager" asp-action="Index" asp-route-manager="1" class="nav-link px-0 align-middle text-white">
+                                        <i class="bi bi-coin"></i><span class="ms-1 d-none d-sm-inline">Chi tiêu tiền mua đồ dùng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Manager" asp-action="Index" asp-route-manager="1" class="nav-link px-0 align-middle text-white">
+                                        <i class="bi bi-coin"></i><span class="ms-1 d-none d-sm-inline">Chi tiêu tiền tiện - nước - dịch vụ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Manager" asp-action="Index" asp-route-manager="1" class="nav-link px-0 align-middle text-white">
+                                        <i class="bi bi-coin"></i><span class="ms-1 d-none d-sm-inline">Chi tiêu tiền sửa chửa CSVC</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>
+                                <a href="#submenu6" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                    <i class="bi bi-flag"></i><span class="ms-1 d-none d-sm-inline">Báo cáo</span>
+                                </a>
+                            </strong>
+                            <ul class="collapse nav flex-column ms-1" id="submenu6" data-bs-parent="#menu">
                                 <li class="w-100">
                                     <a asp-controller="SaleReport" asp-action="Index" asp-route-manager="1" class="nav-link px-0 align-middle text-white">
                                         <i class="bi bi-flag-fill"></i><span class="ms-1 d-none d-sm-inline">Báo cáo doanh thu</span>
@@ -108,7 +134,17 @@
                                 </li>
                                 <li>
                                     <a asp-controller="Room" asp-action="RoomUsageReport" asp-route-manager="1" class="nav-link px-0 align-middle text-white">
-                                        <i class="bi bi-flag-fill"></i><span class="ms-1 d-none d-sm-inline">Báo cáo tỷ lệ dùng</span>
+                                        <i class="bi bi-flag-fill"></i><span class="ms-1 d-none d-sm-inline">Báo cáo tỷ lệ dùng phòng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Manager" asp-action="Index" asp-route-manager="1" class="nav-link px-0 align-middle text-white">
+                                        <i class="bi bi-flag-fill"></i><span class="ms-1 d-none d-sm-inline">Báo cáo doanh thu từ nhà bếp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Manager" asp-action="Index" asp-route-manager="1" class="nav-link px-0 align-middle text-white">
+                                        <i class="bi bi-flag-fill"></i><span class="ms-1 d-none d-sm-inline">Báo cáo chi tiêu</span>
                                     </a>
                                 </li>
                             </ul>
@@ -116,11 +152,11 @@
 
                         <li>
                             <strong>
-                                <a href="#submenu6" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
+                                <a href="#submenu7" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-white">
                                     <i class="bi bi-file-ruled"></i><span class="ms-1 d-none d-sm-inline">Quy Định</span>
                                 </a>
                             </strong>
-                            <ul class="collapse nav flex-column ms-1" id="submenu6" data-bs-parent="#menu">
+                            <ul class="collapse nav flex-column ms-1" id="submenu7" data-bs-parent="#menu">
                                 <li class="w-100">
                                     <a asp-controller="LoaiPhong" asp-action="RoomType" class="nav-link px-0 align-middle text-white">
                                         <i class="bi bi-file-ruled-fill"></i><span class="ms-1 d-none d-sm-inline">Loại phòng</span>
@@ -136,7 +172,7 @@
                                         <i class="bi bi-file-ruled-fill"></i><span class="ms-1 d-none d-sm-inline">Tỷ lệ phụ thu</span>
                                     </a>
                                 </li>
-                            </ul>            
+                            </ul>
                         </li>
                         <li>
                             <strong>

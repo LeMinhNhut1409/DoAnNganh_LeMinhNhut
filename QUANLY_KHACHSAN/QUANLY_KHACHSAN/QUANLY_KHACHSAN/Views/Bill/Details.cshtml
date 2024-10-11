@@ -65,15 +65,12 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Tongtien)
         </dd>
-        <dt class="col-sm-2">
-            Phụ Thu
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Tylephuthu)%
-        </dd>
+        <dt class="col-sm-2">Phụ Thu</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Tylephuthu)%</dd>
 
     </dl>
 </div>
 <div>
     <a asp-action="Index" class="btn btn-warning">Quay lại lịch sử hóa đơn</a>
+    <a asp-action="ExportBillToPdf" asp-route-id="@Model.Mahd" class="btn btn-primary">Xuất hoá đơn</a>
 </div>
